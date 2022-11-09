@@ -1,1 +1,124 @@
+.about__section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
+.about__suptitle {
+  @include font(18, 700, 22);
+  text-align: center;
+  text-transform: uppercase;
+
+  margin-bottom: 12px;
+}
+
+.about__title {
+  @include font(30, 400, 38);
+  font-family: Seymour One;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 1200px) {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.about__container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+
+  // .about-left-side,
+  // .about-right-side {
+  //   // flex-basis: calc((100% - 30px) / 2);
+  // }
+}
+
+.about__pic {
+  margin-bottom: 40px;
+}
+
+.about__text {
+  width: 220px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    width: 334px;
+    margin-left: 32px;
+    margin-bottom: 48px;
+
+    @media screen and (min-width: 1200px) {
+      width: 463px;
+      margin-left: 100px;
+    }
+  }
+}
+
+.about__paragraph {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+
+  @include font(12, 400, 21);
+  letter-spacing: 0.04em;
+
+  @media screen and (min-width: 1200px) {
+    @include font(16, 400, 28);
+  }
+}
+
+.features-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+  }
+}
+
+.features__item {
+  text-align: center;
+  // width: 230px;
+  // height: 100px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    width: 152px;
+    // height: 253px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 368;
+    // height: 223px;
+  }
+}
+
+.features__title {
+  @include font(36, 700, 42);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 18px;
+
+  @media screen and (min-width: 768px) {
+    @include font(48, 700, 42);
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: 1200px) {
+    @include font(58, 700, 71);
+  }
+}
+
+.features__text {
+  @include font(12, 700, 20);
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    @include font(14, 400, 24);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(16, 400, 28);
+    letter-spacing: 0.02em;
+  }
+}
