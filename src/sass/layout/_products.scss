@@ -1,8 +1,15 @@
 .products {
-  padding: 60px 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   color: var(--text-color--dark);
   font-family: 'Montserrat', sans-serif;
   text-align: center;
+
+  background-image: url('../images/products/bg-products-mob1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .products__suptitle {
@@ -25,15 +32,9 @@
   padding-left: 40px;
   padding-right: 40px;
   border-radius: 16px;
-  margin-right: auto;
-  margin-left: auto;
   position: relative;
 
   background-color: #efd478;
-}
-
-.products__item:not(:last-child) {
-  margin-bottom: 164px;
 }
 
 .products__item:first-child {
@@ -51,7 +52,7 @@
   letter-spacing: 0.04em;
 }
 
-.products__title--cream::before {
+.products__item--cream::before {
   content: '';
   width: 201px;
   height: 211px;
@@ -60,12 +61,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
+  z-index: 5;
   top: 0px;
   left: 0px;
-  transform: translate(45%, -50%);
+  transform: translate(60%, -50%);
 }
 
-.products__title--coffee::before {
+.products__item--coffee::before {
   content: '';
   background-image: url('../images/products/coffee-mob.png');
   background-position: center;
@@ -73,14 +75,14 @@
   background-size: cover;
   width: 201px;
   height: 211px;
-  z-index: 1000;
+  z-index: 5;
   position: absolute;
   top: 0px;
   left: 0px;
-  transform: translate(45%, -50%);
+  transform: translate(60%, -50%);
 }
 
-.products__title--milkshake::before {
+.products__item--milkshake::before {
   content: '';
   background-image: url('../images/products/milkshake-mob.png');
   background-position: center;
@@ -88,18 +90,28 @@
   background-size: cover;
   width: 201px;
   height: 211px;
-  z-index: 1000;
+  z-index: 5;
   position: absolute;
   top: 0px;
   left: 0px;
-  transform: translate(45%, -50%);
+  transform: translate(60%, -50%);
 }
 
 .products__text {
   @include font(14px, 400, 25px);
 
-  max-width: 280px;
+  padding-left: 40px;
+  padding-right: 40px;
   letter-spacing: 0.04em;
+  margin-bottom: 90px;
+}
+
+// 0-767px
+
+@media screen and (max-width: 767px) {
+  .products__item:not(:last-child) {
+    margin-bottom: 164px;
+  }
 }
 
 // 768-1199px
@@ -110,14 +122,19 @@
   }
 
   .products__text {
-    margin-bottom: 90px;
-    max-width: 172px;
+    padding-left: 26px;
+    padding-right: 26px;
+    margin-bottom: 83px;
   }
 }
 
 // 0-768px
 
 @media screen and (min-width: 768px) {
+  .products {
+    background-image: url('../images/products/bg-products-tablet.png');
+  }
+
   .section__title {
     @include font(34px, 400, 43px);
     margin-bottom: 200px;
@@ -125,7 +142,7 @@
 
   .products__list {
     display: flex;
-    justify-content: space-between;
+
     gap: 16px;
   }
 
@@ -141,7 +158,7 @@
     min-width: 160px;
   }
 
-  .products__title--cream::before {
+  .products__item--cream::before {
     content: '';
     background-image: url('../images/products/ice-cream-tablet.png');
     background-position: center;
@@ -149,14 +166,14 @@
     background-size: cover;
     width: 200px;
     height: 208px;
-    z-index: 1000;
+    z-index: 5;
     position: absolute;
     top: 0px;
     left: 0px;
     transform: translate(6%, -50%);
   }
 
-  .products__title--coffee::before {
+  .products__item--coffee::before {
     content: '';
     background-image: url('../images/products/coffee-tablet.png');
     background-position: center;
@@ -164,14 +181,14 @@
     background-size: cover;
     width: 201px;
     height: 211px;
-    z-index: 1000;
+    z-index: 5;
     position: absolute;
     top: 0px;
     left: 0px;
     transform: translate(6%, -50%);
   }
 
-  .products__title--milkshake::before {
+  .products__item--milkshake::before {
     content: '';
     background-image: url('../images/products/milkshake-tablet.png');
     background-position: center;
@@ -179,7 +196,7 @@
     background-size: cover;
     width: 201px;
     height: 211px;
-    z-index: 1000;
+    z-index: 5;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -189,15 +206,15 @@
   .products__suptitle {
     @include font(22px, 800, 27px);
   }
-
-  .products__text {
-    max-width: 172px;
-  }
 }
 
 // 1200px+
 
 @media screen and (min-width: 1200px) {
+  .products {
+    background-image: url('../images/products/bg-products-desktop.png');
+  }
+
   .products__suptitle {
     @include font(30px, 800, 37px);
   }
@@ -210,25 +227,28 @@
     margin-bottom: 303px;
   }
 
+  .products__list {
+    gap: 32px;
+  }
+
   .products__title {
     margin-bottom: 120px;
     @include font(30px, 700, 37px);
     min-width: 218px;
   }
 
-  .products__list {
-    gap: 32px;
-  }
-
   .products__item {
+    flex-basis: calc((100% - 64px) / 3);
+    padding-top: 166px;
   }
 
   .products__text {
     margin-bottom: 90px;
-    max-width: 242px;
+    padding-left: 69px;
+    padding-right: 69px;
   }
 
-  .products__title--cream::before {
+  .products__item--cream::before {
     content: '';
     background-image: url('../images/products/ice-cream-mob.png');
     background-position: center;
@@ -236,14 +256,15 @@
     background-size: cover;
     width: 302px;
     height: 317px;
-    z-index: 1000;
+    z-index: 5;
     position: absolute;
     top: 0px;
     left: 0px;
     transform: translate(10%, -50%);
+    margin-bottom: 165px;
   }
 
-  .products__title--coffee::before {
+  .products__item--coffee::before {
     content: '';
     background-image: url('../images/products/coffee-mob.png');
     background-position: center;
@@ -251,14 +272,14 @@
     background-size: cover;
     width: 302px;
     height: 317px;
-    z-index: 1000;
+    z-index: 5;
     position: absolute;
     top: 0px;
     left: 0px;
     transform: translate(10%, -50%);
   }
 
-  .products__title--milkshake::before {
+  .products__item--milkshake::before {
     content: '';
     background-image: url('../images/products/milkshake-mob.png');
     background-position: center;
@@ -266,10 +287,10 @@
     background-size: cover;
     width: 302px;
     height: 317px;
-    z-index: 1000;
+    z-index: 5;
     position: absolute;
     top: 0px;
     left: 0px;
-    transform: translate(10%, -50%);
+    transform: translate(10%, -52%);
   }
 }
