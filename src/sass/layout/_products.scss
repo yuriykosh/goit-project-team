@@ -197,7 +197,7 @@
   .products__item {
     display: flex;
     flex-direction: column;
-    padding-top: 106px;
+    padding-top: 107px;
     padding-left: 12px;
     padding-right: 12px;
     flex-basis: calc((100% - 32px) / 3);
@@ -312,7 +312,7 @@
   }
 
   .products__text {
-    margin-bottom: 90px;
+    margin-bottom: 66px;
     padding-left: 69px;
     padding-right: 69px;
   }
@@ -413,15 +413,16 @@
 
 .ingredients__value {
   align-items: center;
-  width: 43px;
   max-height: 43px;
   padding-top: 7px;
   padding-bottom: 8px;
   margin-right: auto;
   margin-left: auto;
   border: 2px solid #9cbe8f;
-  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
   border-radius: 50px;
+  width: 43px;
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+
   @include font(10px, 500, 28px);
   background-color: #9cbe8f;
 }
@@ -475,13 +476,13 @@
 
 .ingredients-form__input {
   padding: 11px 16px;
-  width: 240px;
-  background-color: rgba(248, 210, 78, 0.1);
   border: 1px solid var(--bg-color--olive);
   border-radius: 10px;
+  width: 240px;
+  background-color: rgba(248, 210, 78, 0.1);
 }
 
-.ingredients-form--comment {
+.ingredients-form__comment {
   display: block;
   resize: none;
   width: 240px;
@@ -489,9 +490,9 @@
 }
 
 .ingredients__btn {
-  min-width: 132px;
   display: block;
   margin: 0 auto;
+  min-width: 132px;
 }
 
 @media screen and (min-width: 768px) {
@@ -513,11 +514,11 @@
   }
 
   .ingredients__value {
+    padding-top: 12px;
+    padding-bottom: 13px;
     @include font(12px, 500, 28px);
     width: 53px;
     max-height: 53px;
-    padding-top: 12px;
-    padding-bottom: 13px;
   }
 
   .ingredients__text {
