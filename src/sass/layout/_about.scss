@@ -13,7 +13,7 @@
 
 .about__title {
   @include font(30, 400, 38);
-  font-family: Seymour One;
+  font-family: Seymour One, sans-serif;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 32px;
@@ -146,29 +146,4 @@
 
   @include font(14, 400, 27);
   letter-spacing: 0.04em;
-}
-
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform var(--transition-dur-and-func),
-    opacity var(--transition-dur-and-func),
-    visibility var(--transition-dur-and-func);
-
-  padding: 28px;
-  // width: calc(100% - 30px);
-  max-width: 280px;
-
-  background-color: var(--bg-color--bright);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-
-  @media screen and (min-width: 768px) {
-    min-height: 449px;
-    min-width: 568px;
-  }
 }
