@@ -54,20 +54,16 @@
   }
 }
 
+.hero__title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
 .hero__points-of-sale {
   display: none;
 
   @media screen and (min-width: 768px) {
-    position: absolute;
-    right: 32px;
-    top: 28px;
-    display: block;
-  }
-
-  @media screen and (min-width: 1200px) {
-    position: absolute;
-    right: 16px;
-    top: 56px;
     display: block;
   }
 }
@@ -228,6 +224,7 @@
 .icecream-wrapper {
   position: absolute;
   bottom: 0;
+  z-index: -2;
 
   @media screen and (max-width: 767px) {
     height: 219px;
