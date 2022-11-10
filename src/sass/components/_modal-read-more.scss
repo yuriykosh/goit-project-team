@@ -4,12 +4,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: var(--add-color-2);
-  padding: 28px 30px;
+  padding: 28px;
   z-index: 1000;
   background-color: #fff;
   border-radius: 10px;
-  border: 2px solid #f8d24e;
+  border: 2px solid var(--accent);
 }
 
 .backdrop-modal__btn {
@@ -36,23 +35,27 @@
 
 .modal-form__header {
   font-family: 'Seymour One', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
+  @include font(16, 400, 24);
   margin: 0 auto;
   text-align: center;
-  color: #131313;
+  color: var(--text-color--dark);
   margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    @include font(20, 400, 28);
+    margin-bottom: 32px;
+  }
 }
 
 .modal-form__text {
   font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.43;
-  color: #131313;
+  @include font(14, 400, 20);
+  color: var(--text-color--dark);
   margin-bottom: 28px;
+
+  @media screen and (min-width: 768px) {
+    @include font(16, 400, 22);
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -64,5 +67,15 @@
   .backdrop-modal {
     width: 568px;
     padding: 32px 60px;
+  }
+}
+
+.backdrop-modal__close {
+  width: 16px;
+  height: 16px;
+
+  @media screen and (min-width: 768px) {
+    width: 20px;
+    height: 20px;
   }
 }
