@@ -155,6 +155,7 @@
   }
 
   .products__item {
+    padding-top: 106px;
     padding-left: 12px;
     padding-right: 12px;
     flex-basis: calc((100% - 32px) / 3);
@@ -162,7 +163,6 @@
   }
 
   .products__title {
-    margin-bottom: 80px;
     @include font(22px, 700, 27px);
     min-width: 160px;
   }
@@ -238,12 +238,13 @@
   }
 
   .products__title {
-    margin-bottom: 120px;
+    margin-bottom: 65px;
     @include font(30px, 700, 37px);
     min-width: 218px;
   }
 
   .products__item {
+    padding-top: 166px;
     flex-basis: calc((100% - 64px) / 3);
     padding-top: 166px;
     max-width: 370px;
