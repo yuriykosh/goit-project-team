@@ -7,12 +7,13 @@
   font-family: 'Montserrat', sans-serif;
   text-align: center;
 
-  background-image: url('../images/products/bg-products-mob1.png'),
-    url('../images/products/bg-products-mob2.png'),
-    url('../images/products/bg-products-mob3.png');
-  background-position: top, center, bottom;
+  background-image: url('../images/products/bg-products.svg');
+  // url('../images/products/bg-products-mob1.png'),
+  //   url('../images/products/bg-products-mob2.png'),
+  //   url('../images/products/bg-products-mob3.png');
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .products__suptitle {
@@ -90,6 +91,10 @@
   margin-bottom: 90px;
 }
 
+.products__btn {
+  margin-bottom: 20px;
+}
+
 // 0-767px
 
 @media screen and (max-width: 767px) {
@@ -101,13 +106,6 @@
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
   screen and (min-resolution: 192dpi) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (max-width: 767px) {
-  .products {
-    background-image: url('../images/products/bg-products-mob1@2x.png'),
-      url('../images/products/bg-products-mob2@2x.png'),
-      url('../images/products/bg-products-mob3@2x.png');
-    background-size: cover;
-  }
-
   .products__item::before {
     background-image: url('../images/products/coffee-mob@2x.png');
   }
@@ -139,8 +137,7 @@
 
 @media screen and (min-width: 768px) {
   .products {
-    background-image: url('../images/products/bg-products-tablet.png');
-    background-size: cover;
+    background-image: url('../images/products/bg-products.svg');
   }
 
   .section__title {
@@ -196,10 +193,6 @@
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
   screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
-  .products {
-    background-image: url('../images/products/bg-products-tablet@2x.png');
-  }
-
   .products__item::before {
     background-image: url('../images/products/coffee-tablet@2x.png');
   }
@@ -217,7 +210,7 @@
 
 @media screen and (min-width: 1200px) {
   .products {
-    background-image: url('../images/products/bg-products-desktop.png');
+    background-image: url('../images/products/bg-products.svg');
     background-size: cover;
   }
 
@@ -283,10 +276,6 @@
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
   screen and (min-resolution: 192dpi) and (min-width: 1200px),
   screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-  .products {
-    background-image: url('../images/products/bg-products-desktop@2x.png');
-  }
-
   .products__item::before {
     background-image: url('../images/products/coffee-desktop@2x.png');
   }
@@ -297,5 +286,9 @@
 
   .products__item:last-child::before {
     background-image: url('../images/products/milkshake-desktop@2x.png');
+  }
+
+  .products__btn {
+    margin-bottom: 60px;
   }
 }
