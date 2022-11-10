@@ -39,14 +39,14 @@
   max-width: 280px;
 
   background-color: #efd478;
-}
 
-.products__item:first-child {
-  background-color: #aec6a5;
-}
+  &:first-child {
+    background-color: #aec6a5;
+  }
 
-.products__item:last-child {
-  background-color: #d6936d;
+  &:last-child {
+    background-color: #d6936d;
+  }
 }
 
 .products__title {
@@ -180,6 +180,10 @@
     background-image: url('../images/products/bg-products.svg');
   }
 
+  .products__suptitle {
+    @include font(22px, 800, 27px);
+  }
+
   .section__title {
     @include font(34px, 400, 43px);
     margin-bottom: 200px;
@@ -187,11 +191,12 @@
 
   .products__list {
     display: flex;
-
     gap: 16px;
   }
 
   .products__item {
+    display: flex;
+    flex-direction: column;
     padding-top: 106px;
     padding-left: 12px;
     padding-right: 12px;
@@ -225,8 +230,8 @@
     background-image: url('../images/products/milkshake-tablet.png');
   }
 
-  .products__suptitle {
-    @include font(22px, 800, 27px);
+  .products__text {
+    flex-grow: 1;
   }
 }
 
@@ -270,25 +275,6 @@
     gap: 32px;
   }
 
-  .products__title {
-    margin-bottom: 65px;
-    @include font(30px, 700, 37px);
-    min-width: 218px;
-  }
-
-  .products__item {
-    padding-top: 166px;
-    flex-basis: calc((100% - 64px) / 3);
-    padding-top: 166px;
-    max-width: 370px;
-  }
-
-  .products__text {
-    margin-bottom: 90px;
-    padding-left: 69px;
-    padding-right: 69px;
-  }
-
   .products__item::before {
     content: '';
     background-image: url('../images/products/coffee-desktop.png');
@@ -304,12 +290,31 @@
     transform: translate(10%, -50%);
   }
 
-  .products__item:first-child::before {
-    background-image: url('../images/products/ice-cream-desktop.png');
+  .products__item {
+    padding-top: 166px;
+    flex-basis: calc((100% - 64px) / 3);
+    padding-top: 166px;
+    max-width: 370px;
+
+    &:first-child::before {
+      background-image: url('../images/products/ice-cream-desktop.png');
+    }
+
+    &:last-child::before {
+      background-image: url('../images/products/milkshake-desktop.png');
+    }
   }
 
-  .products__item:last-child::before {
-    background-image: url('../images/products/milkshake-desktop.png');
+  .products__title {
+    margin-bottom: 65px;
+    @include font(30px, 700, 37px);
+    min-width: 218px;
+  }
+
+  .products__text {
+    margin-bottom: 90px;
+    padding-left: 69px;
+    padding-right: 69px;
   }
 }
 
@@ -336,6 +341,7 @@
 // Ingredients modal
 
 .backdrop {
+  // display: none;
   padding: 100px 20px;
   margin-right: auto;
   margin-left: auto;
@@ -368,22 +374,22 @@
   font-family: 'Seymour One', sans-serif;
   text-align: center;
   margin-bottom: 185px;
-}
 
-.ingredients__title::after {
-  content: '';
-  background-image: url('../images/products/ingredients-mob.png');
-  width: 132px;
-  height: 138px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(125%, 60%);
+  &::after {
+    content: '';
+    background-image: url('../images/products/ingredients-mob.png');
+    width: 132px;
+    height: 138px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(125%, 60%);
 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 5;
+  }
 }
 
 .ingredients__list {
@@ -400,7 +406,6 @@
   flex-basis: calc((100% - 28px) / 4);
   max-width: 53px;
   font-family: 'Montserrat', sans-serif;
-  @include font(10px, 500, 28px);
   border: 2px solid #9cbe8f;
   border-radius: 40px;
   text-align: center;
@@ -408,14 +413,23 @@
 
 .ingredients__value {
   align-items: center;
-  height: 43px;
   width: 43px;
+  max-height: 43px;
+  padding-top: 7px;
+  padding-bottom: 8px;
   margin-right: auto;
   margin-left: auto;
-  background-color: #9cbe8f;
   border: 2px solid #9cbe8f;
   box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
   border-radius: 50px;
+  @include font(10px, 500, 28px);
+  background-color: #9cbe8f;
+}
+
+.ingredients__text {
+  @include font(10px, 400, 12px);
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .ingredients__table {
@@ -439,10 +453,11 @@
 
 .ingredients__table-row {
   @include font(14px, 400, 25px);
-}
+  padding: 0;
 
-.ingredients__table-row:not(:last-child) {
-  margin-bottom: 11px;
+  &:not(:last-child) {
+    border-bottom: 11px solid transparent;
+  }
 }
 
 .ingredients__table-value {
@@ -490,6 +505,23 @@
 
   .ingredients__title::after {
     transform: translate(200%, 60%);
+  }
+
+  .ingredients__item {
+    max-width: 65px;
+    max-height: 90px;
+  }
+
+  .ingredients__value {
+    @include font(12px, 500, 28px);
+    width: 53px;
+    max-height: 53px;
+    padding-top: 12px;
+    padding-bottom: 13px;
+  }
+
+  .ingredients__text {
+    @include font(12px, 400, 15px);
   }
 
   .ingredients-form {
