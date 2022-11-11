@@ -5,4 +5,108 @@
 
 .contacts-menu {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.contacts-menu__item {
+  padding: 40px 32px;
+  background-color: var(--white);
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
+
+.contacts-menu__title {
+  display: inline-block;
+  min-width: 80px;
+  color: var(--text-color--dark);
+  background-color: var(--accent);
+  border-radius: 4px;
+
+  padding-left: 26px;
+  padding-right: 26px;
+
+  margin-bottom: 20px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  text-transform: uppercase;
+}
+
+.contacts-grid__address {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+
+  color: var(--text-color--address);
+}
+
+.contacts-grid__address--city {
+  color: var(--text-color--dark);
+  line-height: 1.86;
+  margin-bottom: 8px;
+}
+
+.contacts-grid__item:not(:last-child) {
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.contacts-grid__work {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  color: var(--text-color--dark);
+}
+
+.contacts-grid__time {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+
+  color: #ababab;
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.contacts-grid__link {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--text-color--dark);
+}
+
+@media screen and (min-width: 768px) {
+  .section-contacts {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  //   .contacts-menu__item {
+  // //   flex-basis: calc((100% -));
+  // // }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-contacts {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
 }
