@@ -16,6 +16,8 @@ body {
 
   background-color: var(--bg-color--olive);
   color: var(--text-color--bright);
+
+  cursor: url('../images/hero/cursor.svg'), auto;
 }
 
 ul,
@@ -40,5 +42,5 @@ a:hover,
 a:focus,
 button:hover,
 button:focus {
-  cursor: url("../images/hero/cursor.svg"), pointer;
+  cursor: url('../images/hero/cursor.svg'), pointer;
 }
