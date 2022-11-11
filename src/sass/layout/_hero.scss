@@ -11,6 +11,18 @@
   @media screen and (min-width: 1200px) {
     padding-top: 45px;
     padding-bottom: 65px;
+    // background-image: url(../images/hero/dots.svg);
+    // background-size: contain;
+    // background-position: bottom;
+    // background-repeat: no-repeat;
+  }
+}
+
+.hero__wrapper-for-background {
+  max-width: 1400px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 1200px) {
     background-image: url(../images/hero/dots.svg);
     background-size: contain;
     background-position: bottom;
@@ -105,8 +117,9 @@
   max-width: 109.54px;
   max-height: 33.84px;
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: 0px;
+  left: -90px;
+  z-index: -1;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -118,7 +131,7 @@
   max-height: 48.63px;
   position: absolute;
   bottom: 0;
-  right: 0;
+  left: 110px;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -131,7 +144,7 @@
   max-width: 109.84px;
   max-height: 33.94px;
   position: absolute;
-  bottom: 0;
+  bottom: -13px;
   left: 0;
 
   @media screen and (min-width: 1200px), (max-width: 767px) {
@@ -144,7 +157,7 @@
   max-width: 182.23px;
   max-height: 67.23px;
   position: absolute;
-  bottom: 0;
+  bottom: -13px;
   right: 0;
 
   @media screen and (min-width: 1200px), (max-width: 767px) {
@@ -153,8 +166,12 @@
 }
 
 .hero__link {
-  display: inline-block;
-  margin-top: 42px;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    margin-top: 42px;
+  }
 }
 
 .hero__text-wrapper {
@@ -201,31 +218,20 @@
   }
 }
 
-// Изменится после добавления кнопок
-
 .hero__buttons-list {
   display: flex;
   column-gap: 8px;
-}
 
-.button-anchor {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 62px;
-  height: 24px;
-  @include font(8px, 600, 9.75px);
-  color: var(--text-color--dark);
-  border: 2px solid var(--accent);
-  border-radius: 8px;
+  @media screen and (min-width: 1200px) {
+    column-gap: 12px;
+  }
 }
-
-// Изменится после добавления кнопок
 
 .icecream-wrapper {
   position: absolute;
 
   @media screen and (max-width: 767px) {
+    z-index: 2;
     bottom: -239px;
     height: 219px;
     width: 170px;
@@ -329,5 +335,7 @@
     display: inline;
   }
 }
+
+
 
 

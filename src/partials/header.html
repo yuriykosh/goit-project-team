@@ -41,7 +41,7 @@
 
             </ul>
         </nav>
-        <button type="button" class="button modal__button" data-modal-open>
+        <button type="button" class="button header-modal__button modal__button button--main" data-modal-open>
             Buy now
             <svg class="modal-butto__svg" width="10" height="10" >
                 <use href="./images/symbol.svg#icon-header-arrow"></use>
@@ -68,17 +68,42 @@
 
     </picture>
 
-
-
-    <button class="menu-toggle js-close-menu">
+    <nav class="navigation">
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
         <svg class="menu-toggle__button" width="32" height="32">
-            <use href="./images/symbol.svg#icon-close-btn">
-
-            </use>
+          <use href="./images/symbol.svg#icon-burger"></use>
         </svg>
-    </button>
+      </button>
 
-    <div class="flex-container">
+      <ul class="site-nav">
+        <li class="site-nav__item">
+          <a href="index.html" class="site-nav__link">Home</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="" class="site-nav__link">How it’s made?</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="#" class="site-nav__link">Our products</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="#" class="site-nav__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <button type="button" class="button modal__button" data-modal-open>
+      Buy now
+      <svg class="modal-butto__svg" width="10" height="10">
+        <use href="./images/symbol.svg#icon-header-arrow"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<div class="flex-container">
         <ul class="mobile-menu">
             <li class="mobile-menu__item">
                 <a href="./index.html" class="mobile-menu__link ">Home</a>
@@ -95,7 +120,7 @@
         </ul>
 
 
-        <button type="button" class="button mobile-menu__button" data-modal-open>
+        <button type="button" class="button mobile-menu__button button--main" data-modal-open>
             Buy now 
             <svg class="mobile-menu__svg" width="10" height="10">
                 <use href="./images/symbol.svg#icon-header-arrow"></use>
