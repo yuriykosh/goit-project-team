@@ -10,7 +10,7 @@
           Soft ice cream with a delicate taste. Made with milk, cream, sugar and
           natural stabilizer
         </p>
-        <button class="products__btn" type="button">
+        <button class="products__btn btn" type="button" data-modal-open>
           <svg class="arrow">
             <use
               class="arrow-default"
@@ -34,7 +34,7 @@
           Fragrant invigorating drink created from 100% natural ingredients
           without the use of preservatives and flavor enhancers
         </p>
-        <button class="products__btn" type="button">
+        <button class="products__btn btn" type="button" data-modal-open>
           <svg class="arrow" aria-label="arrow">
             <use
               class="arrow-default"
@@ -58,7 +58,7 @@
           Sweet drinks based on milk and ice cream, supplemented with syrups,
           fruits, berries and other sweets of your choice
         </p>
-        <button class="products__btn" type="button">
+        <button class="products__btn btn" type="button" data-modal-open>
           <svg class="arrow">
             <use
               class="arrow-default"
@@ -80,8 +80,14 @@
 </section>
 
 <!-- Modal ingredients -->
-<div class="backdrop">
+<div class="backdrop is-hidden" data-modal>
   <div class="modal ingredients">
+    <button class="ingredients__btn-close btn" type="button" data-modal-close>
+      <svg class="ingredients__icon-close" width="20" height="20">
+        <use href="./images/products/sprite.svg#icon-ingredients-close"></use>
+      </svg>
+    </button>
+
     <h2 class="ingredients__title">Chololate icecream</h2>
     <ul class="ingredients__list">
       <li class="ingredients__item">

@@ -88,10 +88,14 @@
   margin-bottom: 90px;
 }
 
-.products__btn {
+.btn {
   background-color: transparent;
   border: none;
   padding: 0;
+  cursor: pointer;
+}
+
+.products__btn {
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 20px;
@@ -101,7 +105,6 @@
   fill: var(--text-color--dark);
   max-height: 20px;
   max-width: 55px;
-  cursor: pointer;
   margin-bottom: 20px;
 }
 
@@ -119,6 +122,7 @@
   .arrow-focus {
     display: none;
   }
+
   .arrow-hover {
     display: inline;
   }
@@ -361,12 +365,19 @@
   position: relative;
   padding: 28px 20px 32px;
   z-index: 100;
-  min-width: 450px;
+  max-width: 450px;
+  width: 100%;
   min-height: 609px;
   color: #131313;
   background-color: #f5f5f5;
   border: 2px solid var(--text-color--accent);
   border-radius: 10px;
+}
+
+.ingredients__btn-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .ingredients__title {
@@ -383,7 +394,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    transform: translate(125%, 60%);
+    transform: translate(60%, 60%);
 
     background-position: center;
     background-repeat: no-repeat;
@@ -470,8 +481,11 @@
   flex-direction: column;
   justify-content: center;
   gap: 16px;
-  // padding-left: 20px;
-  // padding-right: 20px;
+}
+
+.ingredients-form__label {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .ingredients-form__input {
@@ -493,6 +507,17 @@
   display: block;
   margin: 0 auto;
   min-width: 132px;
+  margin-top: 32px;
+}
+
+@media screen and (min-width: 400px) and (max-width: 767px) {
+  .ingredients {
+    margin: auto;
+  }
+
+  .ingredients__title::after {
+    transform: translate(125%, 60%);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -501,11 +526,22 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
+    max-width: 568px;
+    width: 100%;
+    max-height: 995px;
+  }
+
+  .ingredients__title {
+    margin-bottom: 187px;
   }
 
   .ingredients__title::after {
     transform: translate(200%, 60%);
+  }
+
+  .ingredients__list {
+    margin-bottom: 48px;
   }
 
   .ingredients__item {
@@ -523,11 +559,16 @@
 
   .ingredients__text {
     @include font(12px, 400, 15px);
+    padding-bottom: 14px;
+  }
+
+  .ingredients__table-caption {
+    margin-bottom: 24px;
   }
 
   .ingredients-form {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   .ingredients-form__input {
