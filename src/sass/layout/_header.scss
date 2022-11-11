@@ -1,8 +1,8 @@
 // ___________header
 
-.menu-toggle__button {
-  fill: var(--white);
-}
+// .menu-toggle__button {
+//   fill: var(--white);
+// }
 .header {
   background-color: transparent;
 }
@@ -17,7 +17,7 @@
   margin-right: auto;
 }
 
-.hero__button {
+.modal__button {
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -25,6 +25,7 @@
 
 .header__container {
   @media screen and (max-width: 767px) {
+    max-width: 480px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 12px;
@@ -36,13 +37,36 @@
     display: flex;
     align-items: center;
 
+    padding-top: 20px;
     padding-right: 32px;
     padding-left: 32px;
+    max-width: var(--bp-tablet);
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: var(--bp-desktop);
+  }
+}
+
+.header__container .menu-toggle {
+  fill: #ececec;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:active {
+    fill: #f8d24e;
   }
 }
 
 .navigation {
   display: flex;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: 20px;
+  }
 }
 
 .site-nav {
@@ -74,6 +98,7 @@
   text-decoration: none;
   color: var(--text-color--bright);
   padding: 32px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
@@ -93,9 +118,10 @@
   border-radius: 50%;
   outline: none;
 
-  @media (min-width: 767px) {
-    margin-left: 410px;
-  }
+  // @media (min-width: 767px) {
+  //     margin-left: 410px;
+
+  // }
 
   @media (min-width: 1199px) {
     display: none;
@@ -130,6 +156,7 @@
   top: 16px;
   right: 20px;
   fill: var(--white);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:active {
@@ -186,6 +213,8 @@
   font-size: 32px;
   line-height: 1.22;
 
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover,
   &:active {
     color: black;
@@ -204,7 +233,7 @@
 
 // __________________button
 
-.hero__button {
+.modal__button {
   @media screen and (max-width: 767px) {
     display: none;
   }
