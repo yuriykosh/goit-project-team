@@ -16,6 +16,9 @@
   background-color: var(--white);
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
 }
 
 .contacts-menu__title {
@@ -54,8 +57,6 @@
 .contacts-grid__address--bld {
   color: var(--text-color--address);
   line-height: 1.83;
-  text-overflow: ellipsis;
-  overflow: hidden;
   max-width: 200px;
 }
 
@@ -122,7 +123,7 @@
   .contacts-menu {
     flex-direction: row;
     gap: 16px;
-    margin-bottom: 64px;
+    margin-bottom: 60px;
   }
 
   .contacts-menu__title {
@@ -144,10 +145,6 @@
 
   .contacts-grid__address--city {
     margin-bottom: 12px;
-  }
-
-  .contacts-grid__address--bld {
-    min-height: 65px;
   }
 
   .contacts-grid__item:not(:last-child) {
@@ -172,12 +169,336 @@
     line-height: 1.85;
   }
 
-  // =========== Desktop ============= //
+  .contacts-menu__buttons {
+    flex-direction: row;
+  }
+}
 
-  @media screen and (min-width: 1200px) {
-    .section-contacts {
-      padding-top: 100px;
-      padding-bottom: 120px;
-    }
+// =========== Desktop ============= //
+
+@media screen and (min-width: 1200px) {
+  .section-contacts {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+
+  .contacts-menu {
+    gap: 32px;
+    margin-bottom: 64px;
+  }
+
+  .contacts-grid__address {
+    font-size: 16px;
+  }
+
+  .contacts-menu__item {
+    flex-basis: calc((100% - 64px) / 3);
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .contacts-grid__address--city {
+    margin-bottom: 8px;
+  }
+
+  .contacts-grid__work {
+    font-size: 16px;
+  }
+
+  .contacts-grid__time {
+    font-size: 16px;
+  }
+
+  .contacts-grid__link {
+    font-size: 16px;
+    line-height: 1.83;
+  }
+}
+
+// =================== Franchise modal ============== //
+
+.backdrop-franchise {
+  position: absolute;
+  width: calc(100% - 40px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 28px 30px;
+  z-index: 1000;
+  border-radius: 10px;
+  border: 2px solid var(--text-color--accent);
+  border: 2px solid #f8d24e;
+  /* overflow: auto; */
+}
+
+.modal-franchise {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+.backdrop-franchise__btn {
+  position: absolute;
+  z-index: 10000;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+}
+
+.franchise-form__header {
+  font-family: 'Seymour One', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  display: block;
+  line-height: 1.5;
+  margin: 0 auto;
+  text-align: center;
+  color: #131313;
+  margin-bottom: 20px;
+}
+.franchise-form__text {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #131313;
+  margin-bottom: 24px;
+}
+.franchise-form__field {
+  width: 100%;
+}
+.franchise-form__input {
+  display: block;
+  width: 100%;
+  height: 32px;
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  padding-left: 12px;
+  background-color: rgba(248, 210, 78, 0.1);
+  margin-bottom: 12px;
+}
+.franchise-form__input::placeholder {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.41;
+  color: #131313;
+}
+.franchise-form__message {
+  display: block;
+  width: 100%;
+  resize: none;
+  height: 64px;
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  padding-left: 12px;
+  padding-top: 8px;
+  background-color: rgba(248, 210, 78, 0.1);
+  margin-bottom: 24px;
+}
+.franchise-form__message::placeholder {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.41;
+  color: #131313;
+}
+.franchise-form__submit {
+  font-family: 'Montserrat', sans-serif;
+  padding: 12px 34px;
+  border: none;
+  display: block;
+  background-color: #f8d24e;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  width: 114px;
+  margin: 0 auto;
+  color: #131313;
+}
+
+@media screen and (min-width: 480px) {
+  .backdrop-franchise {
+    width: 440px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .backdrop-franchise {
+    width: 568px;
+    padding: 32px 60px;
+  }
+  .franchise-form__input-wrapper {
+    margin: 0 auto;
+  }
+  .franchise-form__header {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 24px;
+    width: 322px;
+  }
+  .franchise-form__text {
+    font-size: 16px;
+    line-height: 1.38;
+    color: #131313;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    width: 448px;
+  }
+  .backdrop-franchise__close {
+    width: 20px;
+    height: 20px;
+  }
+  .franchise-form__input {
+    height: 42px;
+    padding-left: 16px;
+    margin-bottom: 16px;
+  }
+
+  .franchise-form__input::placeholder {
+    font-size: 14px;
+    line-height: 1.43;
+  }
+
+  .franchise-form__message {
+    display: block;
+    width: 100%;
+    resize: none;
+    height: 84px;
+    border: 1px solid #84a178;
+    border-radius: 10px;
+    padding-left: 16px;
+    padding-top: 11px;
+    background-color: rgba(248, 210, 78, 0.1);
+    margin-bottom: 32px;
+  }
+
+  .franchise-form__message::placeholder {
+    font-size: 14px;
+    line-height: 1.43;
+  }
+  .franchise-form__submit {
+    width: 121px;
+    padding: 12px 34px;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+  .franchise-modal__btn {
+    top: 20px;
+    right: 20px;
+  }
+}
+
+// =================== Location ================= //
+
+.location-modal {
+  position: absolute;
+  width: calc(100% - 30px);
+  /* height: auto; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 28px 30px;
+  z-index: 1000;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 2px solid #f8d24e;
+}
+
+.location-form {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 100%;
+}
+.location-modal__btn {
+  position: absolute;
+  z-index: 10000;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+}
+
+.location-form__header {
+  font-family: 'Seymour One', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 auto;
+  text-align: center;
+  color: #131313;
+  margin-bottom: 20px;
+}
+
+.location-form__submit {
+  font-family: 'Montserrat', sans-serif;
+  padding: 12px 34px;
+  border: none;
+  background-color: #f8d24e;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  display: block;
+  margin: 0 auto;
+  color: #131313;
+}
+.location-map {
+  width: 100%;
+  height: 199px;
+  margin-bottom: 24px;
+}
+.location-frame {
+  width: 100%;
+  height: 199px;
+}
+
+@media screen and (min-width: 480px) {
+  .location-modal {
+    width: 440px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .location-modal {
+    width: 568px;
+    padding: 32px 60px;
+  }
+  .location-form__header {
+    font-family: 'Seymour One', sans-serif;
+    font-size: 20px;
+    line-height: 1.4;
+    width: 322px;
+  }
+  .location-modal_close {
+    width: 20px;
+    height: 20px;
+  }
+
+  .location-modal_btn {
+    top: 20px;
+    right: 20px;
+  }
+  .location-map {
+    height: 260px;
+  }
+  .location-frame {
+    height: 100%;
   }
 }
