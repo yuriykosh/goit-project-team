@@ -1,12 +1,14 @@
-.owl-carousel {background-color: #ffffff;
-padding-top: 75px;
+.owl-carousel {
+    background-color: #ffffff;
+    padding-top: 75px;
 
-@media screen and (min-width:768px) {
-padding-top: 55px;}
+    @media screen and (min-width:768px) {
+        padding-top: 55px;
+    }
 
-@media screen and (min-width:1200px) {
-    padding-top: 123px;
-}
+    @media screen and (min-width:1200px) {
+        padding-top: 123px;
+    }
 }
 
 .testimonials-text {
@@ -16,22 +18,22 @@ padding-top: 55px;}
     max-height: 256px;
     margin-left: auto;
     margin-right: auto;
-    
-@media screen and (min-width:768px) {
-    max-width: 705px;
-    max-height: 138px;
-    
-}
 
-@media screen and (min-width:1200px) {
-    max-width: 968px;
-    max-height: 138px;
-    
-}
+    @media screen and (min-width:768px) {
+        max-width: 705px;
+        max-height: 138px;
+
+    }
+
+    @media screen and (min-width:1200px) {
+        max-width: 968px;
+        max-height: 138px;
+
+    }
 }
 
 .testimonials-text-styled {
-    text-align:  center;
+    text-align: center;
     font-weight: 400;
     font-size: 12px;
     line-height: 2.55;
@@ -40,7 +42,7 @@ padding-top: 55px;}
     padding-left: 39px;
     padding-right: 39px;
     color: var(--white);
-    
+
 
     @media screen and (min-width:768px) {
         font-weight: 500;
@@ -51,7 +53,7 @@ padding-top: 55px;}
         padding-left: 29px;
         padding-right: 80px;
         letter-spacing: 0.04em;
-        }
+    }
 
     @media screen and (min-width:1200px) {
         font-size: 16px;
@@ -60,8 +62,8 @@ padding-top: 55px;}
         padding-bottom: 47px;
         padding-left: 109px;
         padding-right: 109px;
-        }
-   
+    }
+
 }
 
 .testimonials-text-author {
@@ -74,19 +76,26 @@ padding-top: 55px;}
     margin-top: 30px;
 
     @media screen and (min-width:768px) {
-    font-size: 16px;
+        font-size: 16px;
     }
 }
 
- .testimonials__images {
+.testimonials__images {
     margin-left: auto;
     margin-right: auto;
     width: 85px;
-     
+
     margin-bottom: 30px;
 
     border-radius: 44px;
- }
+}
 
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-
+.owl-carousel .active span {
+    background: var(--bg-color--olive) !important;
+}
