@@ -15,11 +15,21 @@
 
     <!-- styles -->
     <link rel="stylesheet" href="./sass/index.scss" />
+    <link
+      href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css"
+      rel="stylesheet"
+    />
 
     <!-- javascript -->
     <script type="module" src="./js/index.js"></script>
     <script type="module" src="./js/mobile-menu.js"></script>
     <script type="module" src="./js/modal-read-more.js"></script>
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
   </head>
   <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
@@ -35,4 +45,17 @@
     <include src="./partials/contacts.html"></include>
     <include src="./partials/footer.html"></include>
   </body>
+  <script>
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+      items: 1,
+      // items change number for slider display on desktop
+
+      loop: true,
+      margin: 10,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true,
+    });
+  </script>
 </html>
