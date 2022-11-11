@@ -18,7 +18,7 @@
     margin-right: auto;
 }
 
-.hero__button {
+.modal__button {
     @media screen and (max-width: 767px) {
         display: none;
 
@@ -42,6 +42,7 @@
         display: flex;
         align-items: center;
 
+        padding-top: 20px;
         padding-right: 32px;
         padding-left: 32px;
     }
@@ -49,9 +50,11 @@
 
 .navigation {
     display: flex;
-
-
-
+    @media screen and (max-width: 1199px) and (min-width: 768px) {
+           margin-left: auto;
+           margin-right: 32px;
+           
+        }
 }
 
 .site-nav {
@@ -102,10 +105,10 @@
     border-radius: 50%;
     outline: none;
 
-    @media (min-width: 767px) {
-        margin-left: 410px;
+    // @media (min-width: 767px) {
+    //     margin-left: 410px;
 
-    }
+    // }
 
     @media (min-width: 1199px) {
         display: none;
@@ -227,36 +230,8 @@
 }
 
 // __________________button
-.button {
-    background: #F8D24E;
-    border-radius: 10px;
-    border: none;
-    min-width: 152px;
-    min-height: 42px;
 
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.21;
-     text-align: center;
-
-    color: #131313;
-    cursor: pointer;
-
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:active,
-    &:hover {
-        background-color: var(--grey);
-    }
-}
-
-.hero__button {
-    @media screen and (max-width: 767px) {
-        display: none;
-
-
-    }
-}
+// }
 
 .mobile-menu__button {
     padding: 10px 32px;
