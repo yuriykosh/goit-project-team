@@ -1,0 +1,168 @@
+.section__advantages {
+  padding-top: 42px;
+  padding-bottom: 36px;
+}
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages__item {
+  text-align: center;
+
+  margin-bottom: 27.7px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.advantages__icon {
+  display: inline-block;
+  position: relative;
+
+  margin-bottom: 16px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  background-color: var(--text-color--accent);
+
+  &::before {
+    content: '';
+    position: absolute;
+
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 36px;
+    height: 36px;
+
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &.advantages__icon--cow::before {
+    @include imgRetina('../images/advantages/cow-mob', 'png');
+  }
+
+  &.advantages__icon--weight::before {
+    @include imgRetina('../images/advantages/weight-mob', 'png');
+  }
+
+  &.advantages__icon--icecream::before {
+    @include imgRetina('../images/advantages/ice-cream-mob', 'png');
+  }
+}
+
+.advantages__icon {
+  margin-bottom: 16px;
+}
+
+.advantages__title {
+  margin-bottom: 18px;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.advantages__text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.66;
+}
+
+@media screen and (min-width: 768px) {
+  .section__advantages {
+    padding-top: 48;
+    padding-bottom: 40px;
+  }
+
+  .advantages {
+    flex-direction: row;
+    gap: 80px;
+  }
+
+  .advantages__item {
+    padding-left: 0;
+    padding-right: 0;
+
+    &.advantages__icon--cow::before {
+      @include imgRetina('../images/advantages/cow-tablet', 'png');
+    }
+
+    &.advantages__icon--weight::before {
+      @include imgRetina('../images/advantages/weight-tablet', 'png');
+    }
+
+    &.advantages__icon--icecream::before {
+      @include imgRetina('../images/advantages/ice-cream-tablet', 'png');
+    }
+  }
+
+  .advantages__element {
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  .advantages__title {
+    margin-bottom: 16px;
+
+    font-size: 48px;
+    line-height: 1.22;
+    text-transform: lowercase;
+  }
+
+  .advantages__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.74;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section__advantages {
+    padding-top: 60px;
+    padding-bottom: 86px;
+  }
+
+  .advantages {
+    gap: 130px;
+  }
+
+  .advantages__item {
+    margin-bottom: 0;
+
+    &.advantages__icon--cow::before {
+      @include imgRetina('../images/advantages/cow-desktop', 'png');
+    }
+
+    &.advantages__icon--weight::before {
+      @include imgRetina('../images/advantages/weight-desktop', 'png');
+    }
+
+    &.advantages__icon--icecream::before {
+      @include imgRetina('../images/advantages/ice-cream-desktop', 'png');
+    }
+  }
+
+  .advantages__element {
+    margin-bottom: 40px;
+  }
+
+  .advantages__title {
+    font-size: 58px;
+  }
+
+  .advantages__text {
+    font-size: 16px;
+    line-height: 1.76;
+    letter-spacing: 0.02em;
+  }
+}

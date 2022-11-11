@@ -1,167 +1,356 @@
-<section class="hero">
-  <div class="section__container">
-    <h1 class="hero__title">
-      ice cream made with
-      <span class="hero__title hero__title--big">passion</span>
-    </h1>
-    <ul class="hero__points-of-sale">
-      <li class="hero__point">
-        <span class="hero__number">16</span>
-        <span class="hero__number">cafes</span>
-      </li>
-      <li class="hero__point">
-        <span class="hero__number">23</span>
-        <span class="hero__number">food trucks</span>
-      </li>
-    </ul>
-    <ul class="hero__buttons-list">
-      <li><a href="#products" class="button-anchor">Products</a></li>
-      <li><a href="#about" class="button-anchor">How it’s made?</a></li>
-    </ul>
-    <svg class="hero__dots-left-mobile">
-      <use href="./images/symbol.svg#icon-left-dots-mobile"></use>
-    </svg>
-    <svg class="hero__dots-right-mobile">
-      <use href="./images/symbol.svg#icon-right-dots-mobile"></use>
-    </svg>
-    <svg class="hero__dots-left-tablet">
-      <use href="./images/symbol.svg#icon-left-dots-tablet"></use>
-    </svg>
-    <svg class="hero__dots-right-tablet">
-      <use href="./images/symbol.svg#icon-right-dots-tablet"></use>
-    </svg>
-    <a class="hero__link" href="/">
-      <div class="hero__text-wrapper">
-        <picture class="hero__plate">
+<div class="hero__wrapper-for-background">
+  <section class="hero">
+    <div class="section__container hero__container">
+      <div>
+        <h1 class="hero__title">
+          ice cream made with
+          <span class="hero__title hero__title--big">passion</span>
+        </h1>
+        <ul class="hero__buttons-list">
+          <li>
+            <a href="#products" class="button button__hero">Products</a>
+          </li>
+          <li>
+            <a href="#about" class="button button--underlined"
+              >How it’s made?</a
+            >
+          </li>
+        </ul>
+        <a class="hero__link" href="/">
+          <div class="hero__text-wrapper">
+            <picture class="hero__plate">
+              <source
+                srcset="
+                  ./images/hero/plate-tablet.png    1x,
+                  ./images/hero/plate-tablet@2x.png 2x
+                "
+                media="(max-width: 1199px)"
+                type="image/png"
+              />
+              <source
+                srcset="
+                  ./images/hero/plate-tablet.webp    1x,
+                  ./images/hero/plate-tablet@2x.webp 2x
+                "
+                media="(max-width: 1199px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/hero/plate-desktop.png    1x,
+                  ./images/hero/plate-desktop@2x.png 2x
+                "
+                media="(min-width: 1200px)"
+                type="image/png"
+              />
+              <source
+                srcset="
+                  ./images/hero/plate-desktop.webp    1x,
+                  ./images/hero/plate-desktop@2x.webp 2x
+                "
+                media="(min-width: 1200px)"
+                type="image/webp"
+              />
+              <img src="./images/hero/plate-desktop.png" alt="Plate" />
+            </picture>
+            <div>
+              <p class="hero__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et
+              </p>
+              <svg class="arrow">
+                <use
+                  class="arrow-default"
+                  href="./images/symbol.svg#icon-arrow-default"
+                ></use>
+                <use
+                  class="arrow-hover"
+                  href="./images/symbol.svg#icon-arrow-hover"
+                ></use>
+                <use
+                  class="arrow-focus"
+                  href="./images/symbol.svg#icon-arrow-focus"
+                ></use>
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+      <ul class="hero__points-of-sale">
+        <li class="hero__point">
+          <span class="hero__number">16</span>
+          <span class="hero__number">cafes</span>
+        </li>
+        <li class="hero__point">
+          <span class="hero__number">23</span>
+          <span class="hero__number">food trucks</span>
+        </li>
+      </ul>
+
+      <svg class="hero__dots-left-tablet">
+        <use href="./images/symbol.svg#icon-left-dots-tablet"></use>
+      </svg>
+      <svg class="hero__dots-right-tablet">
+        <use href="./images/symbol.svg#icon-right-dots-tablet"></use>
+      </svg>
+
+      <div class="icecream-wrapper">
+        <picture class="hero__icecream-background">
           <source
             srcset="
-              ./images/hero/plate-tablet.png    1x,
-              ./images/hero/plate-tablet@2x.png 2x
+              ./images/hero/icecream-mobile-bcg.png    1x,
+              ./images/hero/icecream-mobile-bcg@2x.png 2x
+            "
+            media="(max-width: 767px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./images/hero/icecream-mobile-bcg.webp    1x,
+              ./images/hero/icecream-mobile-bcg@2x.webp 2x
+            "
+            media="(max-width: 767px)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="
+              ./images/hero/icecream-tablet-bcg.png    1x,
+              ./images/hero/icecream-tablet-bcg@2x.png 2x
             "
             media="(max-width: 1199px)"
             type="image/png"
           />
           <source
             srcset="
-              ./images/hero/plate-desktop.png    1x,
-              ./images/hero/plate-desktop@2x.png 2x
+              ./images/hero/icecream-tablet-bcg.webp    1x,
+              ./images/hero/icecream-tablet-bcg@2x.webp 2x
+            "
+            media="(max-width: 1199px)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="
+              ./images/hero/icecream-desktop-bcg.png    1x,
+              ./images/hero/icecream-desktop-bcg@2x.png 2x
             "
             media="(min-width: 1200px)"
             type="image/png"
           />
-          <img src="./images/hero/plate-desktop.png" alt="Plate" />
+          <source
+            srcset="
+              ./images/hero/icecream-desktop-bcg.webp    1x,
+              ./images/hero/icecream-desktop-bcg@2x.webp 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/webp"
+          />
+          <img
+            src="./images/hero/icecream-mobile-bcg.png"
+            alt="Icecream background"
+          />
         </picture>
-        <div>
-          <p class="hero__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et
-          </p>
-          <svg class="arrow">
-            <use
-              class="arrow-default"
-              href="./images/symbol.svg#icon-arrow-default"
-            ></use>
-            <use
-              class="arrow-hover"
-              href="./images/symbol.svg#icon-arrow-hover"
-            ></use>
-            <use
-              class="arrow-focus"
-              href="./images/symbol.svg#icon-arrow-focus"
-            ></use>
-          </svg>
-        </div>
+        <picture class="hero__icecream">
+          <source
+            srcset="
+              ./images/hero/icecream-mobile.png    1x,
+              ./images/hero/icecream-mobile@2x.png 2x
+            "
+            media="(max-width: 767px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./images/hero/icecream-mobile.webp    1x,
+              ./images/hero/icecream-mobile@2x.webp 2x
+            "
+            media="(max-width: 767px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/hero/icecream-tablet.png    1x,
+              ./images/hero/icecream-tablet@2x.png 2x
+            "
+            media="(max-width: 1199px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./images/hero/icecream-tablet.webp    1x,
+              ./images/hero/icecream-tablet@2x.webp 2x
+            "
+            media="(max-width: 1199px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/hero/icecream-desktop.png    1x,
+              ./images/hero/icecream-desktop@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./images/hero/icecream-desktop.webp    1x,
+              ./images/hero/icecream-desktop@2x.webp 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/webp"
+          />
+          <img src="./images/hero/icecream-mobile.png" alt="Icecream" />
+        </picture>
+        <picture class="icecream__face">
+          <source
+            srcset="
+              ./images/hero/icecream-mobile-face.png    1x,
+              ./images/hero/icecream-mobile-face@2x.png 2x
+            "
+            media="(max-width: 767px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./images/hero/icecream-mobile-face.webp    1x,
+              ./images/hero/icecream-mobile-face@2x.webp 2x
+            "
+            media="(max-width: 767px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/hero/icecream-tablet-face.png    1x,
+              ./images/hero/icecream-tablet-face@2x.png 2x
+            "
+            media="(max-width: 1199px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./images/hero/icecream-tablet-face.webp    1x,
+              ./images/hero/icecream-tablet-face@2x.webp 2x
+            "
+            media="(max-width: 1199px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/hero/icecream-desktop-face.png    1x,
+              ./images/hero/icecream-desktop-face@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./images/hero/icecream-desktop-face.webp    1x,
+              ./images/hero/icecream-desktop-face@2x.webp 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/webp"
+          />
+          <img
+            src="./images/hero/icecream-mobile-face@2x.png"
+            alt="Icecream face"
+          />
+        </picture>
+        <svg class="hero__dots-left-mobile">
+          <use href="./images/symbol.svg#icon-left-dots-mobile"></use>
+        </svg>
+        <svg class="hero__dots-right-mobile">
+          <use href="./images/symbol.svg#icon-right-dots-mobile"></use>
+        </svg>
       </div>
-    </a>
-
-    <div class="icecream-wrapper">
-      <picture class="hero__icecream-background">
-        <source
-          srcset="
-            ./images/hero/icecream-mobile-bcg.png    1x,
-            ./images/hero/icecream-mobile-bcg@2x.png 2x
-          "
-          media="(max-width: 767px)"
-          type="image/png"
-        />
-        <source
-          srcset="
-            ./images/hero/icecream-tablet-bcg.png    1x,
-            ./images/hero/icecream-tablet-bcg@2x.png 2x
-          "
-          media="(max-width: 1199px)"
-          type="image/png"
-        />
-        <source
-          srcset="
-            ./images/hero/icecream-desktop-bcg.png    1x,
-            ./images/hero/icecream-desktop-bcg@2x.png 2x
-          "
-          media="(min-width: 1200px)"
-          type="image/png"
-        />
-        <img
-          src="./images/hero/icecream-mobile-bcg.png"
-          alt="Icecream background"
-        />
-      </picture>
-      <picture class="hero__icecream">
-        <source
-          srcset="
-            ./images/hero/icecream-mobile.png    1x,
-            ./images/hero/icecream-mobile@2x.png 2x
-          "
-          media="(max-width: 767px)"
-          type="image/png"
-        />
-        <source
-          srcset="
-            ./images/hero/icecream-tablet.png    1x,
-            ./images/hero/icecream-tablet@2x.png 2x
-          "
-          media="(max-width: 1199px)"
-          type="image/png"
-        />
-        <source
-          srcset="
-            ./images/hero/icecream-desktop.png    1x,
-            ./images/hero/icecream-desktop@2x.png 2x
-          "
-          media="(min-width: 1200px)"
-          type="image/png"
-        />
-        <img src="./images/hero/icecream-mobile.png" alt="Icecream" />
-      </picture>
-      <picture class="icecream__face">
-        <source
-          srcset="
-            ./images/hero/icecream-mobile-face.png    1x,
-            ./images/hero/icecream-mobile-face@2x.png 2x
-          "
-          media="(max-width: 767px)"
-          type="image/png"
-        />
-        <source
-          srcset="
-            ./images/hero/icecream-tablet-face.png    1x,
-            ./images/hero/icecream-tablet-face@2x.png 2x
-          "
-          media="(max-width: 1199px)"
-          type="image/png"
-        />
-        <source
-          srcset="
-            ./images/hero/icecream-desktop-face.png    1x,
-            ./images/hero/icecream-desktop-face@2x.png 2x
-          "
-          media="(min-width: 1200px)"
-          type="image/png"
-        />
-        <img
-          src="./images/hero/icecream-mobile-face@2x.png"
-          alt="Icecream face"
-        />
-      </picture>
     </div>
+  </section>
+</div>
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal-buy-now">
+    <button
+      type="button"
+      class="modal-buy__close-button"
+      data-modal-close
+      aria-label="Close modal-window"
+      lang="en"
+    >
+      <svg><use href="./images/symbol.svg#icon-close-btn"></use></svg>
+    </button>
+
+    <b class="modal-buy-now__call-to-action"> Buy now </b>
+
+    <fieldset class="modal-buy-now__fieldset">
+      <label class="modal-buy-now__order modal-buy-now__order--green">
+        <input
+          class="modal-buy-now__checkbox"
+          type="checkbox"
+          name="order"
+          value="ice cream"
+        />
+        <span
+          class="modal-buy-now__product-name modal-buy-now__product-name--green"
+          >ice cream</span
+        >
+      </label>
+      <label class="modal-buy-now__order modal-buy-now__order--yellow">
+        <input
+          class="modal-buy-now__checkbox"
+          type="checkbox"
+          name="order"
+          value="ice coffee"
+        />
+        <span
+          class="modal-buy-now__product-name modal-buy-now__product-name--yellow"
+          >ice coffee</span
+        >
+      </label>
+      <label class="modal-buy-now__order modal-buy-now__order--brown">
+        <input
+          class="modal-buy-now__checkbox"
+          type="checkbox"
+          name="order"
+          value="milkshake"
+        />
+        <span
+          class="modal-buy-now__product-name modal-buy-now__product-name--brown"
+          >milkshake</span
+        >
+      </label>
+    </fieldset>
+
+    <form class="modal-buy-now__form">
+      <label class="modal-buy-now__label"
+        ><input
+          type="text"
+          name="name"
+          class="modal-buy-now__input"
+          placeholder="Name"
+      /></label>
+      <label class="modal-buy-now__label"
+        ><input
+          type="number"
+          name="phone-number"
+          class="modal-buy-now__input"
+          placeholder="Phone"
+      /></label>
+      <label class="modal-buy-now__label-for-textarea">
+        <textarea
+          name="name"
+          class="modal-buy-now__textarea"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+
+      <button
+        type="submit"
+        class="button button__modal button--main modal-buy-now__submit"
+        aria-label="Submit"
+        lang="en"
+      >
+        Submit
+      </button>
+    </form>
   </div>
-</section>
+</div>

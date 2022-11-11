@@ -1,0 +1,125 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+:root {
+  --white: #fcfcfc;
+  --black: #000000;
+  --grey: #ababab;
+  --accent: #f8d24e;
+  --accent--active: #0a8817;
+  --text-color--dark: #131313;
+  --text-color--bright: #fcfcfc;
+  --text-color--accent: #f8d24e;
+  --secondary-text-color: #ababab;
+  --text-color--address: #d6936d;
+  --bg-color--olive: #84a178;
+  --bg-color--bright: #fcfcfc;
+  --bg-color--tablet-menu: #97af8d;
+  --bg-color--backdrop: rgba(0, 0, 0, 0.2);
+  --icon-color: #afb1b8;
+  --bp-mobile: 480px;
+  --bp-tablet: 768px;
+  --bp-desktop: 1200px;
+  --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--bg-color--olive);
+  color: var(--text-color--bright);
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  background-color: var(--bg-color--olive);
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.section__container {
+  max-width: var(--bp-mobile);
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .section__container {
+    max-width: var(--bp-tablet);
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section__container {
+    max-width: var(--bp-desktop);
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages__item:not(:last-child) {
+  margin-bottom: 27.7px;
+}
+
+.advantages__element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.advantages__icon {
+  margin-bottom: 16px;
+}
+
+.advantages__title {
+  margin-bottom: 18px;
+}/*# sourceMappingURL=index.css.map */

@@ -1,6 +1,14 @@
 .about__section {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 21px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 26.5px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 44.5px;
+  }
 }
 
 .about__suptitle {
@@ -28,6 +36,12 @@
   margin-right: auto;
 
   @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
     gap: 100px;
@@ -86,7 +100,7 @@
     top: 25.9px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     border-radius: 1852.2px;
     top: 39px;
   }
@@ -130,12 +144,22 @@
   @include font(14, 400, 27);
   letter-spacing: 0.04em;
 
-  &:first-child {
-    @include font(16, 400, 28);
+  &:not(:last-child) {
+    margin-bottom: 4px;
   }
 
-  &:not(:last-child) {
-    margin-bottom: 8px;
+  @media screen and (min-width: 768px) {
+    @include font(12, 400, 21);
+
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:first-child {
+      @include font(16, 400, 28);
+    }
   }
 }
 
@@ -146,4 +170,19 @@
 
   @include font(14, 400, 27);
   letter-spacing: 0.04em;
+}
+
+.button__about {
+  display: flex;
+  align-items: center;
+  line-height: 1.29;
+
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  & .button__icon {
+    margin-left: 5px;
+  }
 }
