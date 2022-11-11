@@ -1,6 +1,6 @@
 <!-- <div class="backdrop" data-modal>
-  <div class="backdrop-modal">
-    <!-- <button type="button" class="backdrop-modal__btn" data-modal-close>
+  <div class="backdrop-modal"> -->
+<!-- <button type="button" class="backdrop-modal__btn" data-modal-close>
         <svg class="backdrop-modal__close" width="16" height="16">
           <use href="./symbol.svg#icon-close-btn"></use>
         </svg>
@@ -64,7 +64,7 @@
       <button type="submit" class="modal-form-submit">Submit</button>
     </form>
   </div>
-</div> -->
+</div>
 -->
 <section class="section-contacts">
   <div class="section__container section-contacts-wrapper">
@@ -77,7 +77,9 @@
           <li class="contacts-grid__item">
             <address class="contacts-grid__address">
               <p class="contacts-grid__address--city">Chicago</p>
-              10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA
+              <p class="contacts-grid__address--bld">
+                10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA
+              </p>
             </address>
           </li>
           <li class="contacts-grid__item">
@@ -87,12 +89,14 @@
             <p class="contacts-grid__time">08:00 AM - 16:00 PM</p>
           </li>
           <li class="contacts-grid__item">
-            <a href="tel:+610383766284" class="contacts-grid__link"
-              >+61(0) 383 766 284</a
-            >
-            <a href="mailto:noreply@envato.com" class="contacts-grid__link"
-              >noreply@envato.com</a
-            >
+            <div class="contacts-grid__field">
+              <a href="tel:+610383766284" class="contacts-grid__link"
+                >+61(0) 383 766 284</a
+              >
+              <a href="mailto:noreply@envato.com" class="contacts-grid__link"
+                >noreply@envato.com</a
+              >
+            </div>
           </li>
         </ul>
       </li>
@@ -103,7 +107,9 @@
           <li class="contacts-grid__item">
             <address class="contacts-grid__address">
               <p class="contacts-grid__address--city">Los Angeles</p>
-              1003 Manhattan Ave, Manhattan Beach, CA 90263, USA
+              <p class="contacts-grid__address--bld">
+                1003 Manhattan Ave, Manhattan Beach, CA 90263, USA
+              </p>
             </address>
           </li>
           <li class="contacts-grid__item">
@@ -113,12 +119,14 @@
             <p class="contacts-grid__time">08:00 AM - 16:00 PM</p>
           </li>
           <li class="contacts-grid__item">
-            <a href="tel:+610383766284" class="contacts-grid__link"
-              >+61(0) 383 766 284</a
-            >
-            <a href="mailto:noreply@envato.com" class="contacts-grid__link"
-              >noreply@envato.com</a
-            >
+            <div class="contacts-grid__field">
+              <a href="tel:+610383766284" class="contacts-grid__link"
+                >+61(0) 383 766 284</a
+              >
+              <a href="mailto:noreply@envato.com" class="contacts-grid__link"
+                >noreply@envato.com</a
+              >
+            </div>
           </li>
         </ul>
       </li>
@@ -129,7 +137,9 @@
           <li class="contacts-grid__item">
             <address class="contacts-grid__address">
               <p class="contacts-grid__address--city">New York</p>
-              726 Sterling Pl, Brooklyn, NY 11222, USA
+              <p class="contacts-grid__address--bld">
+                726 Sterling Pl, Brooklyn, NY 11222, USA
+              </p>
             </address>
           </li>
           <li class="contacts-grid__item">
@@ -139,17 +149,21 @@
             <p class="contacts-grid__time">08:00 AM - 16:00 PM</p>
           </li>
           <li class="contacts-grid__item">
-            <a href="tel:+610383766284" class="contacts-grid__link"
-              >+61(0) 383 766 284</a
-            >
-            <a href="mailto:noreply@envato.com" class="contacts-grid__link"
-              >noreply@envato.com</a
-            >
+            <div class="contacts-grid__field">
+              <a href="tel:+610383766284" class="contacts-grid__link"
+                >+61(0) 383 766 284</a
+              >
+              <a href="mailto:noreply@envato.com" class="contacts-grid__link"
+                >noreply@envato.com</a
+              >
+            </div>
           </li>
         </ul>
       </li>
     </ul>
   </div>
-  <button type="button">Our Locations</button>
-  <button type="button">Franchise</button>
+  <ul class="contacts-menu__buttons">
+    <li><button type="button">Our Locations</button></li>
+    <li><button type="button">Franchise</button></li>
+  </ul>
 </section>
