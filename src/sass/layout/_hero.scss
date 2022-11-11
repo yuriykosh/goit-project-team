@@ -105,7 +105,7 @@
   max-width: 109.54px;
   max-height: 33.84px;
   position: absolute;
-  bottom: 0;
+  bottom: -239px;
   left: 0;
 
   @media screen and (min-width: 768px) {
@@ -117,7 +117,7 @@
   max-width: 129.71px;
   max-height: 48.63px;
   position: absolute;
-  bottom: 0;
+  bottom: -239px;
   right: 0;
 
   @media screen and (min-width: 768px) {
@@ -131,7 +131,7 @@
   max-width: 109.84px;
   max-height: 33.94px;
   position: absolute;
-  bottom: 0;
+  bottom: -13px;
   left: 0;
 
   @media screen and (min-width: 1200px), (max-width: 767px) {
@@ -144,7 +144,7 @@
   max-width: 182.23px;
   max-height: 67.23px;
   position: absolute;
-  bottom: 0;
+  bottom: -13px;
   right: 0;
 
   @media screen and (min-width: 1200px), (max-width: 767px) {
@@ -201,31 +201,20 @@
   }
 }
 
-// Изменится после добавления кнопок
-
 .hero__buttons-list {
   display: flex;
   column-gap: 8px;
-}
 
-.button-anchor {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 62px;
-  height: 24px;
-  @include font(8px, 600, 9.75px);
-  color: var(--text-color--dark);
-  border: 2px solid var(--accent);
-  border-radius: 8px;
+  @media screen and (min-width: 1200px) {
+    column-gap: 12px;
+  }
 }
-
-// Изменится после добавления кнопок
 
 .icecream-wrapper {
   position: absolute;
 
   @media screen and (max-width: 767px) {
+    z-index: 2;
     bottom: -239px;
     height: 219px;
     width: 170px;

@@ -14,7 +14,108 @@
     @include font(16px, 400, 24px);
     font-family: 'Seymour One', sans-serif;
     color: var(--text-color--dark);
-    outline-color: var(--accent);;
+    outline-color: var(--accent);
+    ;
+}
+
+.modal-buy-now__fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20.21px;
+    margin-bottom: 24.25px;
+    padding: 0;
+    border: none;
+}
+
+.modal-buy-now__checkbox {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+// .callback-form__check-mark {
+//     border: 2px solid var(--title-text-color);
+//     border-radius: 2px;
+//     transition-delay: border background-color;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+// @media screen and(min-device-paxel-ratio: 2),
+// screen and (min-resolution: 192dpi),
+// screen and (min-resolution: 2dppx) {
+//     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/hero@2x.jpg);
+// }
+
+.modal-buy-now__order::before {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    content: '';
+    background-image: url(../images/modal-buy/ice-cream-mobile.png);
+    display: block;
+    width: 131.56px;
+    height: 131.95px;
+}
+
+.modal-buy-now__order::after {
+    position: absolute;
+    z-index: 1;
+    top: 7.48px;
+    content: '';
+    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+    border-radius: 50%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 131.56px;
+    height: 131.95px;
+}
+
+.modal-buy-now__order {
+    position: relative;
+    width: 132px;
+    height: 200.05px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 63.65px;
+}
+
+.modal-buy-now__product-name {
+    display: flex;
+    padding-bottom: 12px;
+    justify-content: center;
+    align-items: flex-end;
+    width: 132px;
+    height: 136.4px;
+    @include font(16px, 700, 19.5px);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--text-color--dark);
+    border: 2px solid #96AF8C;
+    border-radius: 15.7808px;
+
+    .modal-buy-now__checkbox:checked+& {
+        background-color: #96AF8C;
+    }
+}
+
+.modal-buy-now__product-name--yellow {
+    border: 2px solid #EFD478;
+
+    .modal-buy-now__checkbox:checked+& {
+        background-color: #EFD478;
+    }
+}
+
+.modal-buy-now__product-name--brown {
+    border: 2px solid #D6936D;
+
+    .modal-buy-now__checkbox:checked+& {
+        background-color: #D6936D;
+    }
 }
 
 .modal-buy-now__label {
@@ -22,7 +123,7 @@
     margin-bottom: 12.12px;
 
     &:last-child {
-    margin-bottom: 24.25px;
+        margin-bottom: 24.25px;
     }
 }
 
@@ -38,9 +139,9 @@
     border-radius: 10px;
 
     &:focus-visible {
-            outline: 1px solid var(--accent);
-            border: 1px solid var(--accent);
-        }
+        outline: 1px solid var(--accent);
+        border: 1px solid var(--accent);
+    }
 }
 
 .modal-buy-now__textarea {

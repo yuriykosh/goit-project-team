@@ -6,8 +6,12 @@
         <span class="hero__title hero__title--big">passion</span>
       </h1>
       <ul class="hero__buttons-list">
-        <li><a href="#products" class="button-anchor">Products</a></li>
-        <li><a href="#about" class="button-anchor">How it’s made?</a></li>
+        <li>
+          <a href="#products" class="button button__hero">Products</a>
+        </li>
+        <li>
+          <a href="#about" class="button button--underlined">How it’s made?</a>
+        </li>
       </ul>
       <a class="hero__link" href="/">
         <div class="hero__text-wrapper">
@@ -22,11 +26,27 @@
             />
             <source
               srcset="
+                ./images/hero/plate-tablet.webp    1x,
+                ./images/hero/plate-tablet@2x.webp 2x
+              "
+              media="(max-width: 1199px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
                 ./images/hero/plate-desktop.png    1x,
                 ./images/hero/plate-desktop@2x.png 2x
               "
               media="(min-width: 1200px)"
               type="image/png"
+            />
+            <source
+              srcset="
+                ./images/hero/plate-desktop.webp    1x,
+                ./images/hero/plate-desktop@2x.webp 2x
+              "
+              media="(min-width: 1200px)"
+              type="image/webp"
             />
             <img src="./images/hero/plate-desktop.png" alt="Plate" />
           </picture>
@@ -64,6 +84,19 @@
       </li>
     </ul>
 
+    <svg class="hero__dots-left-mobile">
+      <use href="./images/symbol.svg#icon-left-dots-mobile"></use>
+    </svg>
+    <svg class="hero__dots-right-mobile">
+      <use href="./images/symbol.svg#icon-right-dots-mobile"></use>
+    </svg>
+    <svg class="hero__dots-left-tablet">
+      <use href="./images/symbol.svg#icon-left-dots-tablet"></use>
+    </svg>
+    <svg class="hero__dots-right-tablet">
+      <use href="./images/symbol.svg#icon-right-dots-tablet"></use>
+    </svg>
+
     <div class="icecream-wrapper">
       <picture class="hero__icecream-background">
         <source
@@ -76,6 +109,15 @@
         />
         <source
           srcset="
+            ./images/hero/icecream-mobile-bcg.webp    1x,
+            ./images/hero/icecream-mobile-bcg@2x.webp 2x
+          "
+          media="(max-width: 767px)"
+          type="image/webp"
+        />
+
+        <source
+          srcset="
             ./images/hero/icecream-tablet-bcg.png    1x,
             ./images/hero/icecream-tablet-bcg@2x.png 2x
           "
@@ -84,11 +126,28 @@
         />
         <source
           srcset="
+            ./images/hero/icecream-tablet-bcg.webp    1x,
+            ./images/hero/icecream-tablet-bcg@2x.webp 2x
+          "
+          media="(max-width: 1199px)"
+          type="image/webp"
+        />
+
+        <source
+          srcset="
             ./images/hero/icecream-desktop-bcg.png    1x,
             ./images/hero/icecream-desktop-bcg@2x.png 2x
           "
           media="(min-width: 1200px)"
           type="image/png"
+        />
+        <source
+          srcset="
+            ./images/hero/icecream-desktop-bcg.webp    1x,
+            ./images/hero/icecream-desktop-bcg@2x.webp 2x
+          "
+          media="(min-width: 1200px)"
+          type="image/webp"
         />
         <img
           src="./images/hero/icecream-mobile-bcg.png"
@@ -106,6 +165,14 @@
         />
         <source
           srcset="
+            ./images/hero/icecream-mobile.webp    1x,
+            ./images/hero/icecream-mobile@2x.webp 2x
+          "
+          media="(max-width: 767px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
             ./images/hero/icecream-tablet.png    1x,
             ./images/hero/icecream-tablet@2x.png 2x
           "
@@ -114,11 +181,27 @@
         />
         <source
           srcset="
+            ./images/hero/icecream-tablet.webp    1x,
+            ./images/hero/icecream-tablet@2x.webp 2x
+          "
+          media="(max-width: 1199px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
             ./images/hero/icecream-desktop.png    1x,
             ./images/hero/icecream-desktop@2x.png 2x
           "
           media="(min-width: 1200px)"
           type="image/png"
+        />
+        <source
+          srcset="
+            ./images/hero/icecream-desktop.webp    1x,
+            ./images/hero/icecream-desktop@2x.webp 2x
+          "
+          media="(min-width: 1200px)"
+          type="image/webp"
         />
         <img src="./images/hero/icecream-mobile.png" alt="Icecream" />
       </picture>
@@ -133,11 +216,27 @@
         />
         <source
           srcset="
+            ./images/hero/icecream-mobile-face.webp    1x,
+            ./images/hero/icecream-mobile-face@2x.webp 2x
+          "
+          media="(max-width: 767px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
             ./images/hero/icecream-tablet-face.png    1x,
             ./images/hero/icecream-tablet-face@2x.png 2x
           "
           media="(max-width: 1199px)"
           type="image/png"
+        />
+        <source
+          srcset="
+            ./images/hero/icecream-tablet-face.webp    1x,
+            ./images/hero/icecream-tablet-face@2x.webp 2x
+          "
+          media="(max-width: 1199px)"
+          type="image/webp"
         />
         <source
           srcset="
@@ -147,6 +246,14 @@
           media="(min-width: 1200px)"
           type="image/png"
         />
+        <source
+          srcset="
+            ./images/hero/icecream-desktop-face.webp    1x,
+            ./images/hero/icecream-desktop-face@2x.webp 2x
+          "
+          media="(min-width: 1200px)"
+          type="image/webp"
+        />
         <img
           src="./images/hero/icecream-mobile-face@2x.png"
           alt="Icecream face"
@@ -154,23 +261,50 @@
       </picture>
     </div>
   </div>
-  <svg class="hero__dots-left-mobile">
-    <use href="./images/symbol.svg#icon-left-dots-mobile"></use>
-  </svg>
-  <svg class="hero__dots-right-mobile">
-    <use href="./images/symbol.svg#icon-right-dots-mobile"></use>
-  </svg>
-  <svg class="hero__dots-left-tablet">
-    <use href="./images/symbol.svg#icon-left-dots-tablet"></use>
-  </svg>
-  <svg class="hero__dots-right-tablet">
-    <use href="./images/symbol.svg#icon-right-dots-tablet"></use>
-  </svg>
 </section>
 
 <div class="backdrop is-hidden" data-modal>
   <div class="modal-buy-now">
     <b class="modal-buy-now__call-to-action"> Buy now </b>
+
+    <fieldset class="modal-buy-now__fieldset">
+      <label class="modal-buy-now__order">
+        <input
+          class="modal-buy-now__checkbox modal-buy-now__checkbox--green"
+          type="checkbox"
+          name="order"
+          value="ice cream"
+        />
+        <span
+          class="modal-buy-now__product-name modal-buy-now__product-name--green"
+          >ice cream</span
+        >
+      </label>
+      <label class="modal-buy-now__order">
+        <input
+          class="modal-buy-now__checkbox modal-buy-now__checkbox--yellow"
+          type="checkbox"
+          name="order"
+          value="ice coffee"
+        />
+        <span
+          class="modal-buy-now__product-name modal-buy-now__product-name--yellow"
+          >ice coffee</span
+        >
+      </label>
+      <label class="modal-buy-now__order">
+        <input
+          class="modal-buy-now__checkbox modal-buy-now__checkbox--brown"
+          type="checkbox"
+          name="order"
+          value="milkshake"
+        />
+        <span
+          class="modal-buy-now__product-name modal-buy-now__product-name--brown"
+          >milkshake</span
+        >
+      </label>
+    </fieldset>
 
     <form class="modal-buy-now__form">
       <label class="modal-buy-now__label"
