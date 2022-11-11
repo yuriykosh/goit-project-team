@@ -372,6 +372,7 @@
   background-color: #f5f5f5;
   border: 2px solid var(--text-color--accent);
   border-radius: 10px;
+  margin: auto;
 }
 
 .ingredients__btn-close {
@@ -511,10 +512,6 @@
 }
 
 @media screen and (min-width: 400px) and (max-width: 767px) {
-  .ingredients {
-    margin: auto;
-  }
-
   .ingredients__title::after {
     transform: translate(125%, 60%);
   }
@@ -534,10 +531,10 @@
 
   .ingredients__title {
     margin-bottom: 187px;
-  }
 
-  .ingredients__title::after {
-    transform: translate(175%, 60%);
+    &::after {
+      transform: translate(175%, 60%);
+    }
   }
 
   .ingredients__list {
