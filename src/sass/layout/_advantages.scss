@@ -46,15 +46,15 @@
   }
 
   &.advantages__icon--cow::before {
-    background-image: url('../images/cow-icon.png');
+    @include imgRetina('../images/advantages/cow-mob', 'png');
   }
 
   &.advantages__icon--weight::before {
-    background-image: url('../images/weight-icon.png');
+    @include imgRetina('../images/advantages/weight-mob', 'png');
   }
 
   &.advantages__icon--icecream::before {
-    background-image: url('../images/ice-cream-icon.png');
+    @include imgRetina('../images/advantages/ice-cream-mob', 'png');
   }
 }
 
@@ -92,6 +92,18 @@
   .advantages__item {
     padding-left: 0;
     padding-right: 0;
+
+    &.advantages__icon--cow::before {
+      @include imgRetina('../images/advantages/cow-tablet', 'png');
+    }
+
+    &.advantages__icon--weight::before {
+      @include imgRetina('../images/advantages/weight-tablet', 'png');
+    }
+
+    &.advantages__icon--icecream::before {
+      @include imgRetina('../images/advantages/ice-cream-tablet', 'png');
+    }
   }
 
   .advantages__element {
@@ -104,6 +116,7 @@
 
     font-size: 48px;
     line-height: 1.22;
+    text-transform: lowercase;
   }
 
   .advantages__text {
@@ -125,6 +138,18 @@
 
   .advantages__item {
     margin-bottom: 0;
+
+    &.advantages__icon--cow::before {
+      @include imgRetina('../images/advantages/cow-desktop', 'png');
+    }
+
+    &.advantages__icon--weight::before {
+      @include imgRetina('../images/advantages/weight-desktop', 'png');
+    }
+
+    &.advantages__icon--icecream::before {
+      @include imgRetina('../images/advantages/ice-cream-desktop', 'png');
+    }
   }
 
   .advantages__element {
