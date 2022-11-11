@@ -180,10 +180,6 @@
 // 0-768px
 
 @media screen and (min-width: 768px) {
-  .products {
-    background-image: url('../images/products/bg-products.svg');
-  }
-
   .products__suptitle {
     @include font(22px, 800, 27px);
   }
@@ -258,11 +254,6 @@
 // 1200px+
 
 @media screen and (min-width: 1200px) {
-  .products {
-    background-image: url('../images/products/bg-products.svg');
-    background-size: cover;
-  }
-
   .products__suptitle {
     @include font(30px, 800, 37px);
   }
