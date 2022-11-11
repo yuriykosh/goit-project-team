@@ -35,3 +35,10 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+a:hover,
+a:focus,
+button:hover,
+button:focus {
+  cursor: url("../images/hero/cursor.svg"), pointer;
+}
