@@ -1,1 +1,159 @@
 // * BUTTON *
+/*  
+BUTTONS FOR MODALS 
+  Submit,
+  Open map   class="button button__modal button--main"
+BUTTON FOR HEADER__SECTION 
+    Buy now  class="button button__header button--main" + inside  <svg class="button__icon" width="12px" height="12px">
+            <use href="./images/symbol.svg#icon-header-arrow"></use>
+          </svg>
+BUTTONS FOR HERO__SECTION 
+   Products   class="button button__hero"
+   How its made?   class="button button--underlined"
+BUTTON FOR ABOUT__SECTION
+   Read more   class="button button__about button--main"  + inside  <svg class="button__icon" width="12px" height="12px">
+            <use href="./images/symbol.svg#icon-header-arrow"></use>
+          </svg>
+ BUTTON FOR LOCATION__SECTION     
+     Our Locations  class="button button__location button--main"  + inside  <svg class="button__icon" width="12px" height="12px">
+            <use href="./images/symbol.svg#icon-header-arrow"></use>
+          </svg>
+     Franchise  class="button button__location button--transparent"   + inside    <svg class="button__icon" width="12px" height="12px">
+            <use href="./images/symbol.svg#icon-header-arrow"></use>
+          </svg>        
+   */
+.button {
+  @include font(14px, 600, 17px);
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: var(--text-color--dark);
+  background: none;
+}
+.button--main {
+  background-color: var(--accent);
+  border-radius: 10px;
+  padding: 12px 34px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color: var(--accent--active);
+  }
+  &:focus {
+    background-color: var(--accent--active);
+    color: var(--white);
+    fill: var(--white);
+  }
+  &:disabled {
+    background-color: #ababab;
+  }
+}
+.button--transparent {
+  border: 2px solid var(--accent);
+  background-color: transparent;
+  padding: 12px 34px;
+  border-radius: 10px;
+  line-height: 1.29;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    border-color: var(--accent--active);
+  }
+  &:focus {
+    border-color: var(--accent--active);
+    color: var(--white);
+    fill: var(--white);
+  }
+  &:disabled {
+    border-color: var(--grey);
+  }
+}
+.button--underlined {
+  @include font(8px, 600, 10px);
+
+  @media (min-width: 1200px) {
+    @include font(14px, 600, 17px);
+    min-width: 154px;
+    min-height: 40px;
+  }
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 82.8px;
+  min-height: 24px;
+  color: var(--accent);
+  text-decoration: underline;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    color: var(--accent--active);
+  }
+  &:focus {
+    color: var(--white);
+  }
+  &:disabled {
+    color: var(--grey);
+  }
+}
+.button__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 7px;
+}
+.button__hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 62px;
+  height: 24px;
+  @include font(8px, 600, 9.75px);
+  border-radius: 8px;
+  border: 2px solid var(--accent);
+  background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    border-color: var(--accent--active);
+  }
+  &:focus {
+    border-color: var(--accent--active);
+    color: var(--white);
+  }
+  &:disabled {
+    border-color: var(--grey);
+  }
+  @media (min-width: 1200px) {
+    width: 134px;
+    height: 42px;
+    @include font(14px, 600, 18px);
+    border-radius: 10px;
+  }
+}
+.button__modal {
+  @include font(12px, 600, 15px);
+  @media (min-width: 768px) {
+    @include font(14px, 600, 17px);
+  }
+}
+.button__about {
+  display: flex;
+  align-items: center;
+  line-height: 1.29;
+  & .button__icon {
+    margin-left: 5px;
+  }
+}
+.button__location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 6px;
+  width: 196px;
+  height: 42px;
+  line-height: 1.29;
+}
