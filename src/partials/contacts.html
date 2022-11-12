@@ -1,6 +1,6 @@
 <!-- CONTACTS -->
 
-<section class="section-contacts">
+<section class="section-contacts" id="contact">
   <div class="section__container section-contacts-wrapper">
     <h2 class="visually-hidden">Contacts</h2>
 
@@ -100,7 +100,7 @@
     <li>
       <button
         type="button"
-        franchise-open
+        data-modal-locations-open
         class="button button__location button--main"
       >
         Our Locations
@@ -112,7 +112,7 @@
     <li>
       <button
         type="button"
-        location-open
+        data-modal-franchise-open
         class="button button__location button--transparent"
       >
         Franchise
@@ -126,9 +126,13 @@
 
 <!-- Franchise -->
 
-<div class="backdrop is-hidden" franchise-modal>
+<div class="backdrop is-hidden" data-modal-franchise>
   <div class="backdrop-franchise">
-    <button type="button" class="backdrop-franchise__btn" franchise-close>
+    <button
+      type="button"
+      class="backdrop-franchise__btn"
+      data-modal-franchise-close
+    >
       <svg class="backdrop-franchise__close" width="16" height="16">
         <use href="./images/symbol.svg#icon-close-btn"></use>
       </svg>
@@ -195,9 +199,13 @@
 
 <!-- Location  -->
 
-<div class="backdrop" location-modal>
+<div class="backdrop is-hidden" data-modal-locations>
   <div class="location-modal">
-    <button type="button" class="location-modal__btn" location-close>
+    <button
+      type="button"
+      class="location-modal__btn"
+      data-modal-locations-close
+    >
       <svg class="location-modal__close" width="16" height="16">
         <use href="./images/symbol.svg#icon-close-btn"></use>
       </svg>
@@ -218,4 +226,3 @@
     </form>
   </div>
 </div>
-

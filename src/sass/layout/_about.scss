@@ -141,22 +141,19 @@
 // }
 
 .about__paragraph {
-  @include font(14, 400, 27);
+  @include font(12, 400, 21);
   letter-spacing: 0.04em;
-
   &:not(:last-child) {
     margin-bottom: 4px;
   }
-
   @media screen and (min-width: 768px) {
     @include font(12, 400, 21);
-
     &:not(:last-child) {
       margin-bottom: 8px;
     }
   }
-
   @media screen and (min-width: 1200px) {
+    @include font(14, 400, 27);
     &:first-child {
       @include font(16, 400, 28);
     }

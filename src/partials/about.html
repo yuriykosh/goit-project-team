@@ -1,4 +1,4 @@
-<section class="about__section section">
+<section class="about__section section" id="about">
   <div class="section__container">
     <p class="about__suptitle">Tradition and love</p>
     <h2 class="about__title">how it's made?</h2>
@@ -10,41 +10,66 @@
           <picture>
             <!-- Desktop -->
 
-            <source srcset="
-               /src/images/about/cow-desktop.webp    1x,
-               /src/images/about/cow-desktop@2x.webp 2x
-             " media="(min-width: 1200px)" type="image/webp" />
+            <source
+              srcset="
+                /src/images/about/cow-desktop.webp    1x,
+                /src/images/about/cow-desktop@2x.webp 2x
+              "
+              media="(min-width: 1200px)"
+              type="image/webp"
+            />
 
-            <source srcset="
-               /src/images/about/cow-desktop.jpeg    1x,
-               /src/images/about/cow-desktop@2x.jpeg 2x
-             " media="(min-width: 1200px)" />
+            <source
+              srcset="
+                /src/images/about/cow-desktop.jpeg    1x,
+                /src/images/about/cow-desktop@2x.jpeg 2x
+              "
+              media="(min-width: 1200px)"
+            />
 
             <!-- Tablet -->
 
-            <source srcset="
-               /src/images/about/cow-tablet.webp    1x,
-               /src/images/about/cow-tablet@2x.webp 2x
-             " media="(min-width: 768px)" type="image/webp" />
+            <source
+              srcset="
+                /src/images/about/cow-tablet.webp    1x,
+                /src/images/about/cow-tablet@2x.webp 2x
+              "
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
 
-            <source srcset="
-               /src/images/about/cow-tablet.jpeg    1x,
-               /src/images/about/cow-tablet@2x.jpeg 2x
-             " media="(min-width: 768px)" />
+            <source
+              srcset="
+                /src/images/about/cow-tablet.jpeg    1x,
+                /src/images/about/cow-tablet@2x.jpeg 2x
+              "
+              media="(min-width: 768px)"
+            />
 
             <!-- Mobile -->
 
-            <source srcset="
-               /src/images/about/cow-mobile.webp    1x,
-               /src/images/about/cow-mobile@2x.webp 2x
-             " media="(min-width: 320px)" type="image/webp" />
+            <source
+              srcset="
+                /src/images/about/cow-mobile.webp    1x,
+                /src/images/about/cow-mobile@2x.webp 2x
+              "
+              media="(min-width: 320px)"
+              type="image/webp"
+            />
 
-            <source srcset="
-               /src/images/about/cow-mobile.jpeg    1x,
-               /src/images/about/cow-mobile@2x.jpeg 2x
-             " media="(min-width: 320px)" />
+            <source
+              srcset="
+                /src/images/about/cow-mobile.jpeg    1x,
+                /src/images/about/cow-mobile@2x.jpeg 2x
+              "
+              media="(min-width: 320px)"
+            />
 
-            <img src="/src/images/about/cow-mobile.jpeg" alt="cow" class="about__pic" />
+            <img
+              src="/src/images/about/cow-mobile.jpeg"
+              alt="cow"
+              class="about__pic"
+            />
           </picture>
         </div>
       </div>
@@ -67,43 +92,45 @@
           </p>
         </div>
 
-        <button type="button" class="button button__about  button--main  modal__button" data-modal-read-open>Read more
-          <svg class="button__icon" width="12px" height="12px">
+        <button
+          type="button"
+          class="button button__about button--main modal__button"
+          data-modal-read-open
+        >
+          Read more
+          <svg class="button__icon" width="12" height="12">
             <use href="./images/symbol.svg#icon-header-arrow"></use>
-          </svg></button>
+          </svg>
+        </button>
       </div>
     </div>
   </div>
 </section>
 
-
 <div class="backdrop is-hidden" data-modal-read>
-
-
-
   <div class="modal-read-more">
-
     <button type="button" class="modal-read-more__btn" data-modal-read-close>
       <svg class="modal-read-more__close" width="16" height="16">
         <use href="./images/symbol.svg#icon-close-btn"></use>
       </svg>
     </button>
 
-
     <div class="modal-read-more__window">
-
       <b class="modal-read-more__header">How it’s made?</b>
 
-      <iframe class="modal-read-more__video" src="https://www.youtube.com/embed/hO-7cz7gyAY" frameborder="0"
+      <iframe
+        class="modal-read-more__video"
+        src="https://www.youtube.com/embed/hO-7cz7gyAY"
+        frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+        allowfullscreen
+      ></iframe>
 
       <p class="modal-read-more__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-        Lorem ipsum dolor
-        sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et
       </p>
-
     </div>
   </div>
 </div>

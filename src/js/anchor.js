@@ -1,5 +1,5 @@
 function scrollNav() {
-  $('.site-nav__item a').click(function(){
+  $('.anchor a').click(function(){
     $(".active").removeClass("active");     
     $(this).addClass("active");
     
@@ -10,4 +10,3 @@ function scrollNav() {
   });
 }
 scrollNav();
-
