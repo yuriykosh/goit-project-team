@@ -31,19 +31,22 @@ BUTTON FOR ABOUT__SECTION
   color: var(--text-color--dark);
   background: none;
 }
+
 .button--main {
   background-color: var(--accent);
   border-radius: 10px;
   padding: 12px 34px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    stroke 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1) color 250ms
+      cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
     background-color: var(--accent--active);
   }
   &:focus {
     background-color: var(--accent--active);
     color: var(--white);
+    stroke: var(--white);
     fill: var(--white);
   }
   &:disabled {
@@ -57,8 +60,9 @@ BUTTON FOR ABOUT__SECTION
   border-radius: 10px;
   line-height: 1.29;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    stroke 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
     border-color: var(--accent--active);
@@ -67,6 +71,7 @@ BUTTON FOR ABOUT__SECTION
     border-color: var(--accent--active);
     color: var(--white);
     fill: var(--white);
+    stroke: var(--white);
   }
   &:disabled {
     border-color: var(--grey);
