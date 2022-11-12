@@ -1,28 +1,156 @@
-<div class="backdrop is-hidden" data-modal>
-  <div class="backdrop-modal">
-    <!-- <button type="button" class="backdrop-modal__btn" data-modal-close>
-        <svg class="backdrop-modal__close" width="16" height="16">
-          <use href="./symbol.svg#icon-close-btn"></use>
-        </svg>
-      </button> -->
+<!-- CONTACTS -->
 
-    <form class="modal-form">
-      <b class="modal-form__header"
+<section class="section-contacts">
+  <div class="section__container section-contacts-wrapper">
+    <h2 class="visually-hidden">Contacts</h2>
+
+    <ul class="contacts-menu">
+      <li class="contacts-menu__item">
+        <p class="contacts-menu__title">Cafe</p>
+        <ul class="contacts-grid">
+          <li class="contacts-grid__item">
+            <address class="contacts-grid__address">
+              <p class="contacts-grid__address--city">Chicago</p>
+              <p class="contacts-grid__address--bld">
+                10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA
+              </p>
+            </address>
+          </li>
+          <li class="contacts-grid__item">
+            <p class="contacts-grid__work">Monday - Friday</p>
+            <p class="contacts-grid__time">06:00 AM - 10:00 PM</p>
+            <p class="contacts-grid__work">Saturday - Sunday</p>
+            <p class="contacts-grid__time">08:00 AM - 16:00 PM</p>
+          </li>
+          <li class="contacts-grid__item">
+            <div class="contacts-grid__field">
+              <a href="tel:+610383766284" class="contacts-grid__link"
+                >+61(0) 383 766 284</a
+              >
+              <a href="mailto:noreply@envato.com" class="contacts-grid__link"
+                >noreply@envato.com</a
+              >
+            </div>
+          </li>
+        </ul>
+      </li>
+
+      <li class="contacts-menu__item">
+        <p class="contacts-menu__title">Foodtruck</p>
+        <ul class="contacts-grid">
+          <li class="contacts-grid__item">
+            <address class="contacts-grid__address">
+              <p class="contacts-grid__address--city">Los Angeles</p>
+              <p class="contacts-grid__address--bld">
+                1003 Manhattan Ave, Manhattan Beach, CA 90263, USA
+              </p>
+            </address>
+          </li>
+          <li class="contacts-grid__item">
+            <p class="contacts-grid__work">Monday - Friday</p>
+            <p class="contacts-grid__time">06:00 AM - 10:00 PM</p>
+            <p class="contacts-grid__work">Saturday - Sunday</p>
+            <p class="contacts-grid__time">08:00 AM - 16:00 PM</p>
+          </li>
+          <li class="contacts-grid__item">
+            <div class="contacts-grid__field">
+              <a href="tel:+610383766284" class="contacts-grid__link"
+                >+61(0) 383 766 284</a
+              >
+              <a href="mailto:noreply@envato.com" class="contacts-grid__link"
+                >noreply@envato.com</a
+              >
+            </div>
+          </li>
+        </ul>
+      </li>
+
+      <li class="contacts-menu__item">
+        <p class="contacts-menu__title">Cafe</p>
+        <ul class="contacts-grid">
+          <li class="contacts-grid__item">
+            <address class="contacts-grid__address">
+              <p class="contacts-grid__address--city">New York</p>
+              <p class="contacts-grid__address--bld">
+                726 Sterling Pl, Brooklyn, NY 11222, USA
+              </p>
+            </address>
+          </li>
+          <li class="contacts-grid__item">
+            <p class="contacts-grid__work">Monday - Friday</p>
+            <p class="contacts-grid__time">06:00 AM - 10:00 PM</p>
+            <p class="contacts-grid__work">Saturday - Sunday</p>
+            <p class="contacts-grid__time">08:00 AM - 16:00 PM</p>
+          </li>
+          <li class="contacts-grid__item">
+            <div class="contacts-grid__field">
+              <a href="tel:+610383766284" class="contacts-grid__link"
+                >+61(0) 383 766 284</a
+              >
+              <a href="mailto:noreply@envato.com" class="contacts-grid__link"
+                >noreply@envato.com</a
+              >
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <ul class="contacts-menu__buttons">
+    <li>
+      <button
+        type="button"
+        franchise-open
+        class="button button__location button--main"
+      >
+        Our Locations
+        <svg class="button__icon" width="12px" height="12px">
+          <use href="./images/symbol.svg#icon-header-arrow"></use>
+        </svg>
+      </button>
+    </li>
+    <li>
+      <button
+        type="button"
+        location-open
+        class="button button__location button--transparent"
+      >
+        Franchise
+        <svg class="button__icon" width="12px" height="12px">
+          <use href="./images/symbol.svg#icon-header-arrow"></use>
+        </svg>
+      </button>
+    </li>
+  </ul>
+</section>
+
+<!-- Franchise -->
+
+<div class="backdrop is-hidden" franchise-modal>
+  <div class="backdrop-franchise">
+    <button type="button" class="backdrop-franchise__btn" franchise-close>
+      <svg class="backdrop-franchise__close" width="16" height="16">
+        <use href="./images/symbol.svg#icon-close-btn"></use>
+      </svg>
+    </button>
+
+    <form class="franchise-form">
+      <b class="franchise-form__header"
         >Thank you for your interest in owning an Ice Cream shop</b
       >
-      <p class="modal-form__text">
+      <p class="franchise-form__text">
         Due to the overwhelming volume of franchise requests we are not
         accepting new franchisee applications at this time. Once the application
         process resumes, we will contact you for further information. Please
         fill out the contact information below and we will reach out for
         additional information. We appreciate your patience.
       </p>
-      <div class="modal-form__wrapper">
-        <label class="modal-form__field">
-          <span class="modal-form__input-wrapper">
+      <div class="franchise-form__wrapper">
+        <label class="franchise-form__field">
+          <span class="franchise-form__input-wrapper">
             <input
               type="text"
-              class="modal-form__input"
+              class="franchise-form__input"
               required
               pattern="[a-zA-Zа-яА-ЯіІїЇʼҐґєЄ]+"
               placeholder="Name"
@@ -30,38 +158,63 @@
             />
           </span>
         </label>
-        <label class="modal-form__field">
-          <span class="modal-form__input-wrapper">
+        <label class="franchise-form__field">
+          <span class="franchise-form__input-wrapper">
             <input
               type="tel"
-              class="modal-form__input"
-              required
+              class="franchise-form__input"
               placeholder="Phone"
               name="user_phone"
             />
           </span>
         </label>
-        <label class="modal-form__field">
-          <span class="modal-form__input-wrapper">
+        <label class="franchise-form__field">
+          <span class="franchise-form__input-wrapper">
             <input
               type="email"
-              class="modal-form__input"
+              class="franchise-form__input"
               required
               placeholder="Email"
               name="user_email"
             />
           </span>
         </label>
-        <label class="modal-form__field">
+        <label class="franchise-form__field">
           <textarea
             name="user_message"
-            class="modal-form__message"
+            class="franchise-form__message"
             placeholder="Comment"
           ></textarea>
         </label>
       </div>
 
-      <button type="submit" class="modal-form-submit">Submit</button>
+      <button type="submit" class="franchise-form__submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<!-- Location  -->
+
+<div class="backdrop" location-modal>
+  <div class="location-modal">
+    <button type="button" class="location-modal__btn" location-close>
+      <svg class="location-modal__close" width="16" height="16">
+        <use href="./images/symbol.svg#icon-close-btn"></use>
+      </svg>
+    </button>
+
+    <form class="location-form">
+      <b class="location-form__header">Our Locations</b>
+      <div class="location-map">
+        <div class="location-frame">
+          <iframe
+            src="https://my.atlistmaps.com/map/04fb6c9b-3fe3-408d-8041-526e096ddce6?share=true"
+            allow="geolocation"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <button type="submit" class="location-form__submit">Open map</button>
     </form>
   </div>
 </div>
