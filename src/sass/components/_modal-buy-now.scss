@@ -1,21 +1,23 @@
 .modal-buy-now {
     position: relative;
     background-color: var(--white);
-    max-width: 280px;
     padding: 28px;
     margin: 0 auto;
     border-radius: 10px;
     border: 2px solid var(--accent);
-    overflow: scroll;
+    overflow-y: auto;
+
+    @media screen and (max-width: 767px) {
+        max-width: 280px;
+    }
 
     @media screen and (min-width: 768px) {
-        max-width: 568px;
+        max-height: 100vh;
         padding: 32px 54px;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        min-width: 528px;
     }
 }
 
@@ -43,7 +45,7 @@
 
     @media screen and (min-width: 768px) {
         flex-wrap: nowrap;
-        gap: 32px;
+        column-gap: 32px;
     }
 }
 
@@ -246,7 +248,8 @@
     margin-bottom: 12.12px;
     
     @media screen and (min-width: 768px) {
-        margin-bottom: 16px;
+        width: 368px;
+        margin: 0 auto 16px;
     }
 }
 
@@ -255,7 +258,8 @@
     margin-bottom: 24.25px;
     
     @media screen and (min-width: 768px) {
-        margin-bottom: 32px;
+        width: 368px;
+        margin: 0 auto 32px;
     }
 }
 
@@ -271,8 +275,10 @@
     border-radius: 10px;
     
     @media screen and (min-width: 768px) {
-        width: 368px;
         padding-top: 11px;
+        padding-bottom: 11px;
+        padding-left: 16px;
+        @include font(14px, 400, 19.6px);
     }
 }
 
@@ -288,6 +294,14 @@
     background-color: rgba(248, 210, 78, 0.1);
     border: 1px solid #84A178;
     border-radius: 10px;
+    
+    @media screen and (min-width: 768px) {
+        min-height: 84px;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        padding-left: 16px;
+        @include font(14px, 400, 19.6px);
+    }
 }
 
 .modal-buy-now__submit {
@@ -308,14 +322,21 @@
     height: 16.17px;
     background-color: transparent;
     color: #000000;
-    transition: color var(--transition-dure-and-function);
+    transition: color var(--transition-dur-and-func);
 
     &:hover,
     &:focus {
-        color: var(--accent-color);
+        color: var(--accent);
+    }
+    @media screen and (min-width: 768px) {
+        right: 20px;
+        top: 20px;
+        width: 20px;
+        height: 20px;
     }
 }
 
-.modal__icon {
+.modal-buy__icon-close {
+    height: 100%;
     fill: currentColor;
 }
