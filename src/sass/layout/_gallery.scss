@@ -1,17 +1,15 @@
 .section__gallery {
-  background: rgb(132, 161, 120);
   background: linear-gradient(
     180deg,
     rgba(132, 161, 120, 1) 20%,
-    rgba(255, 255, 255, 1) 20%
+    rgba(255, 255, 255, 0) 20%
   );
 
   @media (min-width: 768px) and (max-width: 1199px) {
-    background: rgb(132, 161, 120);
     background: linear-gradient(
       180deg,
       rgba(132, 161, 120, 1) 50%,
-      rgba(255, 255, 255, 1) 50%
+      rgba(255, 255, 255, 0) 50%
     );
   }
 }
