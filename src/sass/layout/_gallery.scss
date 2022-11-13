@@ -34,27 +34,25 @@
   padding: 3px 10px;
   bottom: 50%;
 }
-// .slider .slick-arrow.slick-prev {
-//   display: none;
-// }
-// .slider .slick-arrow.slick-next {
-//   display: none;
-// }
+
 .slider-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
-  width: 279px;
-  height: auto;
+  max-width: 279px;
+  height: 130px;
   border-radius: 7.4px;
+  object-fit: cover;
 
   @media (min-width: 768px) {
     border-radius: 18px;
-    width: 704px;
-    height: auto;
+    max-width: 704px;
+    height: 327px;
   }
   @media (min-width: 1200px) {
     border-radius: 24px;
+    max-width: 1013px;
+    height: 422px;
   }
 }
