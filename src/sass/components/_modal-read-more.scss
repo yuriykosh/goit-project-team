@@ -88,7 +88,13 @@
 .modal-read-more__close {
   width: 16px;
   height: 16px;
-  cursor: pointer;
+  fill: currentColor;
+  transition: color var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
 
   @media screen and (min-width: 768px) {
     width: 20px;
