@@ -13,7 +13,7 @@
         <button
           class="products__btn button"
           type="button"
-          data-modal-products-open
+          data-modal-products1-open
         >
           <svg class="arrow">
             <use
@@ -41,7 +41,7 @@
         <button
           class="products__btn button"
           type="button"
-          data-modal-products-open2
+          data-modal-products2-open
         >
           <svg class="arrow" aria-label="arrow">
             <use
@@ -69,7 +69,7 @@
         <button
           class="products__btn button"
           type="button"
-          data-modal-products-open3
+          data-modal-products3-open
         >
           <svg class="arrow">
             <use
@@ -92,12 +92,19 @@
 </section>
 
 <!-- Modal ingredients -->
-<div class="backdrop is-hidden" data-modal-products>
+<div
+  class="backdrop is-hidden"
+  data-modal-products1
+  data-modal-products2
+  data-modal-products3
+>
   <div class="modal ingredients">
     <button
       class="ingredients__btn-close button"
       type="button"
-      data-modal-products-close
+      data-modal-products1-close
+      data-modal-products2-close
+      data-modal-products3-close
     >
       <svg class="ingredients__icon-close" width="20" height="20">
         <use href="./images/products/sprite.svg#icon-ingredients-close"></use>
@@ -177,7 +184,9 @@
         ></textarea>
       </label>
 
-      <button class="button__modal button" type="submit">Submit</button>
+      <button class="button button__modal button--main" type="submit">
+        Submit
+      </button>
     </form>
   </div>
 </div>
