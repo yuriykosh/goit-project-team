@@ -14,11 +14,15 @@
               type="image/webp"
             />
 
-            <img
+            <source
               srcset="
                 ./images/reviews/review-emily.jpg    1x,
                 ./images/reviews/review-emily@2x.jpg 2x
               "
+            />
+
+            <img
+              src="./images/reviews/review-emily.jpg"
               alt="Emily"
               class="testimonials__images"
             />
@@ -45,12 +49,16 @@
               type="image/webp"
             />
 
-            <img
+            <source
               srcset="
                 ./images/reviews/review-bryan.jpg,
                 ./images/reviews/review-bryan@2x.jpg
               "
-              alt="Emily"
+            />
+
+            <img
+              src="./images/reviews/review-bryan.jpg"
+              alt="Bryan"
               class="testimonials__images"
             />
           </picture>
@@ -68,15 +76,23 @@
         <div class="avatar">
           <picture>
             <source
-              srcset="./images/reviews/review-diana.webp"
-              type="image/webp"
-            />
-            <img
               srcset="
                 ./images/reviews/review-diana.webp    1x,
                 ./images/reviews/review-diana@2x.webp 2x
               "
-              alt="Emily"
+              type="image/webp"
+            />
+
+            <source
+              srcset="
+                ./images/reviews/review-diana.jpg    1x,
+                ./images/reviews/review-diana@2x.jpg 2x
+              "
+            />
+
+            <img
+              src="./images/reviews/review-diana.jpg"
+              alt="Diana"
               class="testimonials__images"
             />
           </picture>
