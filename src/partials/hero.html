@@ -21,18 +21,27 @@
             <picture class="hero__plate">
               <source
                 srcset="
+                  ./images/hero/plate-tablet.webp    1x,
+                  ./images/hero/plate-tablet@2x.webp 2x
+                "
+                media="(max-width: 1199px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
                   ./images/hero/plate-tablet.png    1x,
                   ./images/hero/plate-tablet@2x.png 2x
                 "
                 media="(max-width: 1199px)"
                 type="image/png"
               />
+
               <source
                 srcset="
-                  ./images/hero/plate-tablet.webp    1x,
-                  ./images/hero/plate-tablet@2x.webp 2x
+                  ./images/hero/plate-desktop.webp    1x,
+                  ./images/hero/plate-desktop@2x.webp 2x
                 "
-                media="(max-width: 1199px)"
+                media="(min-width: 1200px)"
                 type="image/webp"
               />
               <source
@@ -43,14 +52,7 @@
                 media="(min-width: 1200px)"
                 type="image/png"
               />
-              <source
-                srcset="
-                  ./images/hero/plate-desktop.webp    1x,
-                  ./images/hero/plate-desktop@2x.webp 2x
-                "
-                media="(min-width: 1200px)"
-                type="image/webp"
-              />
+
               <img src="./images/hero/plate-desktop.png" alt="Plate" />
             </picture>
             <div>
@@ -268,7 +270,7 @@
 </div>
 
 <!-- MODAL WINDOW -->
-<div class="backdrop is-hidden" data-modal-buy>
+<div class="backdrop is-hidden" data-modal-buy data-modal-buy-mobile>
   <div class="modal-buy-now">
     <button
       type="button"
