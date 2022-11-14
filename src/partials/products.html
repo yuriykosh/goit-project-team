@@ -10,11 +10,7 @@
           Soft ice cream with a delicate taste. Made with milk, cream, sugar and
           natural stabilizer
         </p>
-        <button
-          class="products__btn button"
-          type="button"
-          data-modal-products1-open
-        >
+        <button class="products__btn" type="button" data-modal-products1-open>
           <svg class="arrow">
             <use
               class="arrow-default"
@@ -38,11 +34,7 @@
           Fragrant invigorating drink created from 100% natural ingredients
           without the use of preservatives and flavor enhancers
         </p>
-        <button
-          class="products__btn button"
-          type="button"
-          data-modal-products2-open
-        >
+        <button class="products__btn" type="button" data-modal-products2-open>
           <svg class="arrow" aria-label="arrow">
             <use
               class="arrow-default"
@@ -66,11 +58,7 @@
           Sweet drinks based on milk and ice cream, supplemented with syrups,
           fruits, berries and other sweets of your choice
         </p>
-        <button
-          class="products__btn button"
-          type="button"
-          data-modal-products3-open
-        >
+        <button class="products__btn" type="button" data-modal-products3-open>
           <svg class="arrow">
             <use
               class="arrow-default"
@@ -92,18 +80,202 @@
 </section>
 
 <!-- Modal ingredients -->
-<div
-  class="backdrop is-hidden"
-  data-modal-products1
-  data-modal-products2
-  data-modal-products3
->
+
+<div class="backdrop is-hidden" data-modal-products1>
+  <div class="modal ingredients">
+    <button
+      class="ingredients__btn-close"
+      type="button"
+      data-modal-products1-close
+    >
+      <svg class="ingredients__icon-close" width="20" height="20">
+        <use href="./images/products/sprite.svg#icon-ingredients-close"></use>
+      </svg>
+    </button>
+
+    <h2 class="ingredients__title ingredients__title--icecream">
+      Chololate icecream
+    </h2>
+    <ul class="ingredients__list">
+      <li class="ingredients__item">
+        <p class="ingredients__value">320</p>
+        <p class="ingredients__text">kcal</p>
+      </li>
+      <li class="ingredients__item">
+        <p class="ingredients__value">4g</p>
+        <p class="ingredients__text">Prote...</p>
+      </li>
+      <li class="ingredients__item">
+        <p class="ingredients__value">8,2g</p>
+        <p class="ingredients__text">Fats</p>
+      </li>
+      <li class="ingredients__item">
+        <p class="ingredients__value">40,4g</p>
+        <p class="ingredients__text">Carbs</p>
+      </li>
+    </ul>
+
+    <table class="ingredients__table">
+      <caption class="ingredients__table-caption">
+        Ingredients
+      </caption>
+      <tr class="ingredients__table-row">
+        <td class="ingredients__table-name">Milk</td>
+        <td class="ingredients__table-value">100ml</td>
+      </tr>
+      <tr class="ingredients__table-row">
+        <td class="ingredients__table-name">Belgian chocolate</td>
+        <td class="ingredients__table-value">20g</td>
+      </tr>
+      <tr class="ingredients__table-row">
+        <td class="ingredients__table-name">Cream</td>
+        <td class="ingredients__table-value">150ml</td>
+      </tr>
+      <tr class="ingredients__table-row">
+        <td class="ingredients__table-name">Cocoa powder</td>
+        <td class="ingredients__table-value">30g</td>
+      </tr>
+      <tr class="ingredients__table-row">
+        <td class="ingredients__table-name">Sugar</td>
+        <td class="ingredients__table-value">40g</td>
+      </tr>
+      <tr class="ingredients__table-row">
+        <td class="ingredients__table-name">Vanilla sugar</td>
+        <td class="ingredients__table-value">10g</td>
+      </tr>
+    </table>
+
+    <form class="ingredients-form">
+      <label class="ingredients-form__label">
+        <input
+          class="ingredients-form__input"
+          type="text"
+          name="user_name"
+          placeholder="Name"
+      /></label>
+      <label class="ingredients-form__label">
+        <input
+          class="ingredients-form__input"
+          type="text"
+          name="user_phone"
+          placeholder="Phone"
+      /></label>
+      <label class="ingredients-form__label">
+        <textarea
+          class="ingredients-form__input ingredients-form__comment"
+          name="user_comment"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+
+      <button class="button button__modal button--main" type="submit">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- Modal coffee -->
+<div class="backdrop is-hidden" data-modal-products2>
   <div class="modal ingredients">
     <button
       class="ingredients__btn-close button"
       type="button"
-      data-modal-products1-close
       data-modal-products2-close
+    >
+      <svg class="ingredients__icon-close" width="20" height="20">
+        <use href="./images/products/sprite.svg#icon-ingredients-close"></use>
+      </svg>
+    </button>
+
+    <h2 class="ingredients__title ingredients__title--icecoffee">
+      Chololate ice-coffee
+    </h2>
+    <ul class="ingredients__list">
+      <li class="ingredients__item">
+        <p class="ingredients__value">320</p>
+        <p class="ingredients__text">kcal</p>
+      </li>
+      <li class="ingredients__item">
+        <p class="ingredients__value">4g</p>
+        <p class="ingredients__text">Prote...</p>
+      </li>
+      <li class="ingredients__item">
+        <p class="ingredients__value">8,2g</p>
+        <p class="ingredients__text">Fats</p>
+      </li>
+      <li class="ingredients__item">
+        <p class="ingredients__value">40,4g</p>
+        <p class="ingredients__text">Carbs</p>
+      </li>
+    </ul>
+
+    <table class="ingredients__table">
+      <caption class="ingredients__table-caption">
+        Ingredients
+      </caption>
+      <tr class="ingredients__table-row">
+        <td class="ingredients__table-name">Milk</td>
+        <td class="ingredients__table-value">100ml</td>
+      </tr>
+      <tr class="ingredients__table-row">
+        <td class="ingredients__table-name">Belgian chocolate</td>
+        <td class="ingredients__table-value">20g</td>
+      </tr>
+      <tr class="ingredients__table-row">
+        <td class="ingredients__table-name">Cream</td>
+        <td class="ingredients__table-value">150ml</td>
+      </tr>
+      <tr class="ingredients__table-row">
+        <td class="ingredients__table-name">Cocoa powder</td>
+        <td class="ingredients__table-value">30g</td>
+      </tr>
+      <tr class="ingredients__table-row">
+        <td class="ingredients__table-name">Sugar</td>
+        <td class="ingredients__table-value">40g</td>
+      </tr>
+      <tr class="ingredients__table-row">
+        <td class="ingredients__table-name">Vanilla sugar</td>
+        <td class="ingredients__table-value">10g</td>
+      </tr>
+    </table>
+
+    <form class="ingredients-form">
+      <label class="ingredients-form__label">
+        <input
+          class="ingredients-form__input"
+          type="text"
+          name="user_name"
+          placeholder="Name"
+      /></label>
+      <label class="ingredients-form__label">
+        <input
+          class="ingredients-form__input"
+          type="text"
+          name="user_phone"
+          placeholder="Phone"
+      /></label>
+      <label class="ingredients-form__label">
+        <textarea
+          class="ingredients-form__input ingredients-form__comment"
+          name="user_comment"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+
+      <button class="button button__modal button--main" type="submit">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- Modal milkshake -->
+<div class="backdrop is-hidden" data-modal-products3>
+  <div class="modal ingredients">
+    <button
+      class="ingredients__btn-close button"
+      type="button"
       data-modal-products3-close
     >
       <svg class="ingredients__icon-close" width="20" height="20">
@@ -111,7 +283,9 @@
       </svg>
     </button>
 
-    <h2 class="ingredients__title">Chololate icecream</h2>
+    <h2 class="ingredients__title ingredients__title--milkshake">
+      Chololate milkshake
+    </h2>
     <ul class="ingredients__list">
       <li class="ingredients__item">
         <p class="ingredients__value">320</p>
