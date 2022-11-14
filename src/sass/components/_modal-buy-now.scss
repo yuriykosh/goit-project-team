@@ -9,7 +9,6 @@
 
   @media screen and (max-width: 767px) {
     max-width: 280px;
-    height: 450px;
   }
 
   @media screen and (min-width: 768px) {
@@ -56,19 +55,6 @@
   -moz-appearance: none;
   appearance: none;
 }
-
-// .callback-form__check-mark {
-//     border: 2px solid var(--title-text-color);
-//     border-radius: 2px;
-//     transition-delay: border background-color;
-//     transition-duration: 250ms;
-//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-// @media screen and(min-device-paxel-ratio: 2),
-// screen and (min-resolution: 192dpi),
-// screen and (min-resolution: 2dppx) {
-//     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/hero@2x.jpg);
-// }
 
 .modal-buy-now__order {
   position: relative;
@@ -225,6 +211,7 @@
   text-align: center;
   color: var(--text-color--dark);
   border-radius: 15.7808px;
+  transition: background-color var(--transition-dur-and-func);
 
   @media screen and (min-width: 768px) {
     padding-bottom: 20px;
@@ -236,6 +223,7 @@
   border: 2px solid #96af8c;
 
   .modal-buy-now__checkbox:checked + & {
+    transition: background-color var(--transition-dur-and-func);
     background-color: #96af8c;
   }
 }
@@ -244,6 +232,7 @@
   border: 2px solid #efd478;
 
   .modal-buy-now__checkbox:checked + & {
+    transition: background-color var(--transition-dur-and-func);
     background-color: #efd478;
   }
 }
@@ -252,6 +241,7 @@
   border: 2px solid #d6936d;
 
   .modal-buy-now__checkbox:checked + & {
+    transition: background-color var(--transition-dur-and-func);
     background-color: #d6936d;
   }
 }
@@ -331,22 +321,22 @@
   align-items: center;
   justify-content: center;
   border-style: none;
+  border-radius: 50%;
   width: 16px;
   height: 16.17px;
   background-color: transparent;
   color: #000000;
-  transition: color var(--transition-dur-and-func);
+  transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func),
+    outline var(--transition-dur-and-func);
 
-  &:hover,
-  &:focus {
-    color: var(--accent);
+  &:hover {
+    outline: 2px solid var(--accent--active);
+    
   }
-
-  @media screen and (max-width: 767px) {
-    position: fixed;
-    top: 110px;
-    right: 50%;
-    transform: translate(130px);
+  &:focus {
+    outline: 2px solid var(--accent--active);
+    background-color: var(--accent--active);
+    color: var(--white);
   }
 
   @media screen and (min-width: 768px) {
